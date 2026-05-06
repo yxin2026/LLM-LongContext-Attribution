@@ -1,0 +1,93 @@
+{
+  "in_domain_related": {
+    "computer_science": [
+      "在{topic}的研究中，{method}方法被广泛采用。",
+      "{framework}框架为{topic}提供了高效的实现方案。",
+      "最新的{topic}模型在{dataset}上刷新了记录。",
+      "{topic}的核心挑战在于解决{challenge}问题。",
+      "研究者们提出了基于{method}的{topic}改进方案。"
+    ],
+    "medicine": [
+      "{topic}在{condition}的临床试验中显示出{percent}的缓解率。",
+      "研究表明{topic}通过{mechanism}发挥治疗作用。",
+      "{topic}与{drug}的联合应用成为新的研究热点。",
+      "在{organ}代谢方面，{topic}表现出良好的药代动力学特征。",
+      "{topic}治疗{condition}的{outcome}改善显著。"
+    ],
+    "law": [
+      "{topic}案件在司法实践中通常适用{standard}进行判断。",
+      "从{theory}角度分析，{topic}涉及多方利益平衡。",
+      "{country}在{topic}领域采取了{approach}的立法模式。",
+      "{topic}的{feature}特征使其在{interest}保护中发挥重要作用。",
+      "近年来{topic}相关的{issue}问题引起了学界关注。"
+    ],
+    "finance": [
+      "{topic}在{period}内的{metric}表现优于市场基准。",
+      "{factor}的变化对{topic}的价格产生显著影响。",
+      "从{model}角度评估，{topic}的当前估值处于{level}。",
+      "{topic}与{asset}的相关性系数约为{correlation}。",
+      "{regulation}政策对{topic}市场产生了深远影响。"
+    ],
+    "education": [
+      "{topic}在提升学生{skill}方面表现出显著效果。",
+      "基于{theory}的{topic}设计原则已被广泛接受。",
+      "{technology}技术为{topic}的实施提供了新的可能。",
+      "研究表明{topic}对不同{context}的学习者效果存在差异。",
+      "{topic}在{level}教育阶段的应用取得了积极成效。"
+    ]
+  },
+  "out_domain_unrelated": {
+    "general": [
+      "今天天气晴朗，适合外出散步。公园里的花开得很漂亮，吸引了不少游客。",
+      "这道菜的做法很简单，只需要准备食材然后按照步骤烹饪即可。",
+      "最近看了一部电影，剧情非常精彩，演员的表演也很到位。",
+      "旅游是一种很好的放松方式，可以让人开阔眼界，体验不同的文化。",
+      "运动对健康非常重要，每天坚持锻炼可以增强体质，提高免疫力。",
+      "读书是一种很好的习惯，可以让人获取知识，提升思维能力。",
+      "音乐能够陶冶情操，不同类型的音乐可以带来不同的情感体验。",
+      "环保是每个人的责任，从小事做起，共同保护我们的地球家园。",
+      "科技改变了我们的生活方式，智能手机让沟通变得更加便捷。",
+      "家庭教育对孩子的成长至关重要，父母的言传身教影响深远。"
+    ]
+  },
+  "random_noise": {
+    "patterns": [
+      "{word1} {word2} {number} {symbol} {word3} {word4}。",
+      "{symbol} {word1} {number} {word2} {symbol} {word3}。",
+      "{number} {word1} {word2} {symbol} {word3} {number}。"
+    ],
+    "words": [
+      "xyz",
+      "abc",
+      "qwe",
+      "mnp",
+      "rst",
+      "uvw",
+      "ijk",
+      "lmn",
+      "opq",
+      "def"
+    ],
+    "numbers": [
+      "123",
+      "456",
+      "789",
+      "321",
+      "654",
+      "987",
+      "147",
+      "258",
+      "369"
+    ],
+    "symbols": [
+      "@#$",
+      "%^&",
+      "*()",
+      "!@#",
+      "&*(",
+      ")(*",
+      "!@$",
+      "%#@"
+    ]
+  }
+}
