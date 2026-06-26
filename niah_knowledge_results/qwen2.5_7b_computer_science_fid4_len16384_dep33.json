@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "computer_science",
+  "fact_id": 4,
+  "needle": "Mixtral的核心机制是MoE",
+  "question": "Mixtral的核心机制是什么？",
+  "answer": "MoE",
+  "context_length": 16384,
+  "depth_percent": 33.3,
+  "model_response": "Mixtral的核心机制是MoE（混合专家模型）。",
+  "score": 10,
+  "test_duration_seconds": 6.16,
+  "test_timestamp_utc": "2026-05-29T06:59:22.832244+00:00",
+  "file_name": "qwen2.5_7b_computer_science_fid4_len16384_dep33"
+}

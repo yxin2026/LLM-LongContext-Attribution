@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "computer_science",
+  "fact_id": 24,
+  "needle": "ULMFiT的迁移方法是逐层解冻",
+  "question": "ULMFiT的迁移方法是什么？",
+  "answer": "逐层解冻",
+  "context_length": 2048,
+  "depth_percent": 0,
+  "model_response": "ULMFiT的迁移方法是逐层解冻。",
+  "score": 10,
+  "test_duration_seconds": 2.58,
+  "test_timestamp_utc": "2026-05-29T06:59:50.611524+00:00",
+  "file_name": "qwen2.5_7b_computer_science_fid24_len2048_dep0"
+}

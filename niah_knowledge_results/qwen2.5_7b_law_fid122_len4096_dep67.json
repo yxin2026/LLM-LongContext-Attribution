@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "law",
+  "fact_id": 122,
+  "needle": "《行政诉讼法》的审查对象是行政行为",
+  "question": "《行政诉讼法》的审查对象是什么？",
+  "answer": "行政行为",
+  "context_length": 4096,
+  "depth_percent": 66.7,
+  "model_response": "《行政诉讼法》的审查对象是行政行为。",
+  "score": 10,
+  "test_duration_seconds": 3.3,
+  "test_timestamp_utc": "2026-05-29T07:22:07.139185+00:00",
+  "file_name": "qwen2.5_7b_law_fid122_len4096_dep67"
+}

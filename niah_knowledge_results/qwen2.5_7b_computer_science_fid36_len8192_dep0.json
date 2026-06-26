@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "computer_science",
+  "fact_id": 36,
+  "needle": "vLLM的核心优化是PagedAttention",
+  "question": "vLLM的核心优化是什么？",
+  "answer": "PagedAttention",
+  "context_length": 8192,
+  "depth_percent": 0,
+  "model_response": "vLLM的核心优化是基于量化技术来减少推理时的内存占用和提高推理速度。具体来说，它使用了混合精度计算和张量并行等技术。",
+  "score": 1,
+  "test_duration_seconds": 8.36,
+  "test_timestamp_utc": "2026-05-29T07:05:22.607406+00:00",
+  "file_name": "qwen2.5_7b_computer_science_fid36_len8192_dep0"
+}

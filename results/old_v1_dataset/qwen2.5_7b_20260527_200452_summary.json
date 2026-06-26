@@ -1,0 +1,30 @@
+{
+  "A": {
+    "subset": "A",
+    "n": 1000,
+    "em": 0.447,
+    "contains": 0.603,
+    "avg_latency_s": 3.38
+  },
+  "B": {
+    "subset": "B",
+    "n": 1920,
+    "em": 0.9875,
+    "contains": 1.0,
+    "avg_latency_s": 0.37
+  },
+  "C": {
+    "subset": "C",
+    "n": 729,
+    "em": 0.8642,
+    "contains": 0.9067,
+    "avg_latency_s": 0.81
+  },
+  "D": {
+    "subset": "D",
+    "n": 1512,
+    "em": 0.3452,
+    "contains": 0.5384,
+    "avg_latency_s": 0.9
+  }
+}

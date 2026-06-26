@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "law",
+  "fact_id": 126,
+  "needle": "《侵权责任法》的现行状态是纳入民法典",
+  "question": "《侵权责任法》的现行状态是什么？",
+  "answer": "纳入民法典",
+  "context_length": 4096,
+  "depth_percent": 50.0,
+  "model_response": "《侵权责任法》的现行状态是纳入民法典。",
+  "score": 10,
+  "test_duration_seconds": 3.48,
+  "test_timestamp_utc": "2026-05-29T07:17:48.723264+00:00",
+  "file_name": "qwen2.5_7b_law_fid126_len4096_dep50"
+}

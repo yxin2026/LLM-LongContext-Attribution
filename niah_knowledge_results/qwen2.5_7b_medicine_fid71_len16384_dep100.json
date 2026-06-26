@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "medicine",
+  "fact_id": 71,
+  "needle": "瑞德西韦的作用机制是RNA聚合酶抑制",
+  "question": "瑞德西韦的作用机制是什么？",
+  "answer": "RNA聚合酶抑制",
+  "context_length": 16384,
+  "depth_percent": 100,
+  "model_response": "瑞德西韦的作用机制是RNA聚合酶抑制。",
+  "score": 10,
+  "test_duration_seconds": 6.05,
+  "test_timestamp_utc": "2026-05-29T07:13:07.205713+00:00",
+  "file_name": "qwen2.5_7b_medicine_fid71_len16384_dep100"
+}

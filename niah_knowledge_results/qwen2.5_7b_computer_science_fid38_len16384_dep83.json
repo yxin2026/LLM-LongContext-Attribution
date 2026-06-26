@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "computer_science",
+  "fact_id": 38,
+  "needle": "ONNX的标准格式是开放神经网络",
+  "question": "ONNX的标准格式是什么？",
+  "answer": "开放神经网络",
+  "context_length": 16384,
+  "depth_percent": 83.3,
+  "model_response": "ONNX的标准格式是开放神经网络交换格式。",
+  "score": 10,
+  "test_duration_seconds": 6.19,
+  "test_timestamp_utc": "2026-05-29T07:04:36.255611+00:00",
+  "file_name": "qwen2.5_7b_computer_science_fid38_len16384_dep83"
+}

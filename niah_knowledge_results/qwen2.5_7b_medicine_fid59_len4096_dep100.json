@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "medicine",
+  "fact_id": 59,
+  "needle": "二甲双胍的原始来源是山羊豆",
+  "question": "二甲双胍的原始来源是什么？",
+  "answer": "山羊豆",
+  "context_length": 4096,
+  "depth_percent": 100,
+  "model_response": "二甲双胍的原始来源是山羊豆。",
+  "score": 10,
+  "test_duration_seconds": 1.73,
+  "test_timestamp_utc": "2026-05-29T07:15:49.708795+00:00",
+  "file_name": "qwen2.5_7b_medicine_fid59_len4096_dep100"
+}

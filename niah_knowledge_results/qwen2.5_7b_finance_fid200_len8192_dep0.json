@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "finance",
+  "fact_id": 200,
+  "needle": "期权希腊值的风险指标是Delta/Gamma",
+  "question": "期权希腊值的风险指标是什么？",
+  "answer": "Delta/Gamma",
+  "context_length": 8192,
+  "depth_percent": 0,
+  "model_response": "期权希腊值中的风险指标包括Delta、Gamma、Theta、Vega和Rho等，它们分别衡量期权价格对标的资产价格、波动率、时间衰减、利率等因素的变化敏感度。",
+  "score": 10,
+  "test_duration_seconds": 8.69,
+  "test_timestamp_utc": "2026-05-29T06:53:49.188692+00:00",
+  "file_name": "qwen2.5_7b_finance_fid200_len8192_dep0"
+}

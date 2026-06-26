@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "education",
+  "fact_id": 223,
+  "needle": "期望价值理论的核心变量是期望与价值",
+  "question": "期望价值理论的核心变量是什么？",
+  "answer": "期望与价值",
+  "context_length": 4096,
+  "depth_percent": 0.0,
+  "model_response": "期望价值理论的核心变量是期望与价值。",
+  "score": 10,
+  "test_duration_seconds": 3.92,
+  "test_timestamp_utc": "2026-05-29T06:40:29.694059+00:00",
+  "file_name": "qwen2.5_7b_education_fid223_len4096_dep0"
+}

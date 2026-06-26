@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "finance",
+  "fact_id": 172,
+  "needle": "PPI的衡量对象是生产者价格",
+  "question": "PPI的衡量对象是什么？",
+  "answer": "生产者价格",
+  "context_length": 16384,
+  "depth_percent": 16.7,
+  "model_response": "PPI的衡量对象是生产环节中的出厂价格，反映了生产者在销售其产品时获得的价格变动情况。",
+  "score": 1,
+  "test_duration_seconds": 7.43,
+  "test_timestamp_utc": "2026-05-29T06:44:28.475911+00:00",
+  "file_name": "qwen2.5_7b_finance_fid172_len16384_dep17"
+}

@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "medicine",
+  "fact_id": 88,
+  "needle": "Southern Blot的检测对象是DNA",
+  "question": "Southern Blot的检测对象是什么？",
+  "answer": "DNA",
+  "context_length": 2048,
+  "depth_percent": 33.3,
+  "model_response": "Southern Blot的检测对象是DNA。",
+  "score": 10,
+  "test_duration_seconds": 2.08,
+  "test_timestamp_utc": "2026-05-29T07:09:02.901703+00:00",
+  "file_name": "qwen2.5_7b_medicine_fid88_len2048_dep33"
+}

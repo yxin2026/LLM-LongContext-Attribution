@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "finance",
+  "fact_id": 187,
+  "needle": "巴塞尔协议III的核心指标是资本充足率",
+  "question": "巴塞尔协议III的核心指标是什么？",
+  "answer": "资本充足率",
+  "context_length_tokens": 17000,
+  "context_length_chars": 29070,
+  "depth_percent": 78.6,
+  "model_response": "巴塞尔协议III的核心指标是总资本充足率和杠杆率。其中，总资本充足率要求银行持有的资本占风险加权资产的最低比例不得低于9%，而杠杆率则要求银行的一级资本与调整后的表内外资产之间的比率不低于3%。",
+  "score": 10,
+  "test_duration_seconds": 2.38,
+  "test_timestamp_utc": "2026-05-29T07:43:12.753717+00:00"
+}

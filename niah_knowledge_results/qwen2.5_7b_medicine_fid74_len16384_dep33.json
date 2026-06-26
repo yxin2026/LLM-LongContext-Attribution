@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "medicine",
+  "fact_id": 74,
+  "needle": "乙肝疫苗的抗原类型是表面抗原",
+  "question": "乙肝疫苗的抗原类型是什么？",
+  "answer": "表面抗原",
+  "context_length": 16384,
+  "depth_percent": 33.3,
+  "model_response": "乙肝疫苗的抗原类型是乙型肝炎表面抗原（HBsAg）。",
+  "score": 10,
+  "test_duration_seconds": 6.89,
+  "test_timestamp_utc": "2026-05-29T07:08:30.912393+00:00",
+  "file_name": "qwen2.5_7b_medicine_fid74_len16384_dep33"
+}

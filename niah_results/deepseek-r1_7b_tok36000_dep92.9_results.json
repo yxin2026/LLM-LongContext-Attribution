@@ -1,0 +1,13 @@
+{
+  "model": "deepseek-r1:7b",
+  "context_length_tokens": 36000,
+  "context_length_chars": 61560,
+  "depth_percent": 92.9,
+  "version": 1,
+  "needle": "量子隼-7型实验飞船于2089年完成了首次超光速测试，飞行距离达到47.3光年。",
+  "retrieval_question": "量子隼-7型实验飞船的首次超光速测试飞行距离是多少？",
+  "model_response": "关于“量子隼-7型实验飞船”的首次超光速测试飞行距离，目前没有公开的具体数据。如果您需要这一信息，请参考官方发布或经过验证的来源。",
+  "score": 1,
+  "test_duration_seconds": 5.54,
+  "test_timestamp_utc": "2026-05-29T07:35:02.468336+00:00"
+}

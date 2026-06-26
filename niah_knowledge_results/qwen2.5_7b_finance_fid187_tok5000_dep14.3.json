@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "finance",
+  "fact_id": 187,
+  "needle": "巴塞尔协议III的核心指标是资本充足率",
+  "question": "巴塞尔协议III的核心指标是什么？",
+  "answer": "资本充足率",
+  "context_length_tokens": 5000,
+  "context_length_chars": 8550,
+  "depth_percent": 14.3,
+  "model_response": "巴塞尔协议III的核心指标包括资本充足率要求和流动性覆盖率。",
+  "score": 10,
+  "test_duration_seconds": 1.6,
+  "test_timestamp_utc": "2026-05-29T07:41:03.219275+00:00"
+}

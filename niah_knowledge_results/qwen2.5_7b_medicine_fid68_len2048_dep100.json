@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "medicine",
+  "fact_id": 68,
+  "needle": "阿达木单抗的靶点是TNF-α",
+  "question": "阿达木单抗的靶点是什么？",
+  "answer": "TNF-α",
+  "context_length": 2048,
+  "depth_percent": 100,
+  "model_response": "阿达木单抗的靶点是TNF-α。",
+  "score": 10,
+  "test_duration_seconds": 1.6,
+  "test_timestamp_utc": "2026-05-29T07:13:22.855086+00:00",
+  "file_name": "qwen2.5_7b_medicine_fid68_len2048_dep100"
+}

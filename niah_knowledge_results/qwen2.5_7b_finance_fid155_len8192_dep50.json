@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:7b",
+  "domain": "finance",
+  "fact_id": 155,
+  "needle": "VaR的风险度量是最大潜在损失",
+  "question": "VaR的风险度量是什么？",
+  "answer": "最大潜在损失",
+  "context_length": 8192,
+  "depth_percent": 50.0,
+  "model_response": "VaR（Value at Risk，风险价值）的风险度量是指在给定的时间区间和置信水平下，可能发生的最大潜在损失的估计值。简单来说，就是以概率形式表达的最大可能损失。例如，在95%的置信水平下，VaR可以表示为：在未来的一段时间内（如一天），投资组合的最大可能损失不会超过某个特定数值的概率是95%。",
+  "score": 10,
+  "test_duration_seconds": 12.25,
+  "test_timestamp_utc": "2026-05-29T06:51:21.428468+00:00",
+  "file_name": "qwen2.5_7b_finance_fid155_len8192_dep50"
+}
