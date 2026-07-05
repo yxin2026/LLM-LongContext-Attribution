@@ -1,0 +1,22 @@
+provider: local
+endpoint: http://localhost:8000/v1
+api_key: local-token
+temperature: 0.0
+top_p: 1.0
+max_tokens: 512
+timeout_sec: 600
+long_timeout_sec: 1800
+retry: 3
+retry_backoff_sec: [2, 4, 8]
+seed: 42
+system_prompt: You are a precise evaluator. Answer with only the final answer.
+providers:
+  local:
+    endpoint: http://localhost:8000/v1
+    api_key_env: LOCAL_OPENAI_API_KEY
+    default_api_key: local-token
+  siliconflow:
+    endpoint: https://api.siliconflow.cn/v1
+    api_key_env: SILICONFLOW_API_KEY
+    enable_thinking: false
+    note: Pass --provider siliconflow and --model Qwen/Qwen3.5-9B, or use the project alias qwen35_9b.

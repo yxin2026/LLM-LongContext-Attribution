@@ -1,0 +1,47 @@
+longbench:
+  tasks:
+    - narrativeqa
+    - qasper
+    - multifieldqa_en
+    - hotpotqa
+    - 2wikimqa
+    - musique
+    - gov_report
+    - qmsum
+    - multi_news
+  smoke_sample_limit: 200
+niah:
+  lengths: [4096, 16384, 32768, 65536]
+  positions: [10, 50, 90]
+  samples_per_cell: 50
+pac:
+  A_position:
+    length: 16384
+    positions: [10, 25, 50, 75, 90]
+    samples_per_cell: 50
+  B_interference:
+    length: 16384
+    position: 10
+    densities: [0, 25, 50, 75, 90]
+    interference_types: [in_domain, out_domain, random_noise]
+    samples_per_cell: 30
+  C_overlap:
+    length: 16384
+    similarities: [high, medium, low, none]
+    distances: [near, medium, far]
+    samples_per_cell: 20
+  D_multihop:
+    hops: [2, 3, 4]
+    hop_distances: [1024, 4096, 8192]
+    lengths: [8192, 16384, 32768]
+    samples_per_cell: 20
+ruler:
+  lengths: [4096, 16384, 32768]
+  tasks:
+    - niah
+    - variable_tracking
+    - common_words_extraction
+    - freq_words_extraction
+    - qa_squad
+    - qa_hotpotqa
+

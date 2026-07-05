@@ -1,0 +1,11 @@
+{
+  "cuda_version": "582.08",
+  "finished_at": "2026-06-27T08:13:48+00:00",
+  "git_commit": "unknown",
+  "gpu_name": "NVIDIA RTX 4000 Ada Generation",
+  "model_config": "configs/models.yaml",
+  "python_version": "3.12.13",
+  "runtime_config": "configs/runtime.yaml",
+  "started_at": "",
+  "vllm_version": "not_installed"
+}
