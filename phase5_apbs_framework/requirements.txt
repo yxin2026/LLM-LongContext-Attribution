@@ -1,0 +1,11 @@
+torch
+transformers
+accelerate
+safetensors
+pandas
+numpy
+matplotlib
+tqdm
+pyyaml
+tabulate
+bitsandbytes
