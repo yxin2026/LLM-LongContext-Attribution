@@ -1,0 +1,4 @@
+﻿benchmark,root,included,jsonl_files,raw_rows_seen,raw_errors_seen,last_modified,note
+longbench,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench,True,9,41321,27973,2026-07-05 21:06:51,primary public-benchmark source selected for paper summary
+niah,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra,True,9,7696,5847,2026-07-05 21:07:08,primary public-benchmark source selected for paper summary
+ruler,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler,True,9,11813,10135,2026-07-05 21:07:34,primary public-benchmark source selected for paper summary
