@@ -1,0 +1,21 @@
+{
+  "length_tokens_max": 31996,
+  "length_tokens_mean": 31983.77,
+  "length_tokens_min": 31973,
+  "model_scope": "all_9",
+  "models_to_run": [
+    "qwen35_9b",
+    "qwen3_8b",
+    "qwen35_27b",
+    "qwen35_35b_a3b",
+    "qwen35_122b_a10b",
+    "seed_oss_36b",
+    "hunyuan_a13b",
+    "qwen3_14b_no_thinking",
+    "qwen3_14b_thinking"
+  ],
+  "n_samples": 75,
+  "position_actual_max": 90.03,
+  "position_actual_min": 11.18,
+  "subset": "PAC-A_position"
+}

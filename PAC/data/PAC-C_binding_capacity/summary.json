@@ -1,0 +1,18 @@
+{
+  "length_tokens_max": 31996,
+  "length_tokens_mean": 31986.46,
+  "length_tokens_min": 31975,
+  "model_scope": "representative_6",
+  "models_to_run": [
+    "qwen35_9b",
+    "qwen35_35b_a3b",
+    "qwen35_122b_a10b",
+    "seed_oss_36b",
+    "qwen3_14b_no_thinking",
+    "qwen3_14b_thinking"
+  ],
+  "n_samples": 72,
+  "position_actual_max": 50.02,
+  "position_actual_min": 49.94,
+  "subset": "PAC-C_binding_capacity"
+}

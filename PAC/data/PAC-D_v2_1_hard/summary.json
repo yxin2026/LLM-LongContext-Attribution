@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    "H4_F16",
+    "H4_F32",
+    "H5_F16",
+    "H5_F32",
+    "H6_F16",
+    "H6_F32"
+  ],
+  "length_tokens_max": 31996,
+  "length_tokens_mean": 31984.75,
+  "length_tokens_min": 31973,
+  "models_to_run": [
+    "qwen35_35b_a3b",
+    "qwen35_122b_a10b",
+    "seed_oss_36b",
+    "qwen3_14b_no_thinking",
+    "qwen3_14b_thinking"
+  ],
+  "n_samples": 12,
+  "position_actual_max": 50.01,
+  "position_actual_min": 49.95,
+  "version": "PAC-D_v2.1_green_verifier_multihop"
+}
