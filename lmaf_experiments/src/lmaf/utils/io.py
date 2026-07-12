@@ -5,6 +5,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable, Iterator
 
+TERMINAL_NONRETRY_ERRORS = {
+    "skipped_by_model_length",
+    "skipped_overlength",
+}
+
 
 def ensure_parent(path: str | Path) -> Path:
     out = Path(path)
@@ -58,7 +63,7 @@ def load_success_ids(path: str | Path) -> set[str]:
     ids: set[str] = set()
     for p in iter_jsonl_paths(path):
         for row in read_jsonl(p):
-            if row.get("sample_id") and row.get("error") in (None, ""):
+            if row.get("sample_id") and row.get("error") in (None, "", *TERMINAL_NONRETRY_ERRORS):
                 ids.add(str(row["sample_id"]))
     return ids
 
@@ -68,4 +73,3 @@ def collect_jsonl(path: str | Path) -> list[dict[str, Any]]:
     for p in iter_jsonl_paths(path):
         rows.extend(read_jsonl(p))
     return rows
-

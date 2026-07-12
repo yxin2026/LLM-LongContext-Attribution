@@ -1,0 +1,78 @@
+{
+  "models": "auto",
+  "pending_by_subset_model": [
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 2,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 69,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 46,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 3,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 67,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 35,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 1,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 21,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 36,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 4,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 5,
+      "subset": "PAC-D_multihop_false_chain"
+    }
+  ],
+  "queue_mode": "api_key_release_pool",
+  "rate_control": {
+    "per_key_delay_sec": 0.0,
+    "queue_max_attempts": 4,
+    "rate_limit_cooldown_sec": 90.0,
+    "sdk_retry": 1,
+    "slots_per_key": 1,
+    "timeout": 420.0,
+    "transient_cooldown_sec": 25.0
+  },
+  "run_id": "pac_v21_full_queue",
+  "subsets": [
+    "A",
+    "B",
+    "C",
+    "D21"
+  ],
+  "total_pending_api_calls": 289
+}

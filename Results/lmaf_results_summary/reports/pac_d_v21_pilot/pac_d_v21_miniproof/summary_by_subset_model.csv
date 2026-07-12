@@ -1,0 +1,4 @@
+subset,model,n_total,n_eval,n_api_error,accuracy,mean_field_accuracy,decoy_capture_rate,partial_rate,omission_rate,near_miss_rate,api_error_rate,mean_latency
+PAC-D_multihop_false_chain,qwen35_122b_a10b,6,6,0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,3.723
+PAC-D_multihop_false_chain,qwen35_35b_a3b,6,6,0,0.0,0.6667,0.0,1.0,0.0,0.0,0.0,5.926
+PAC-D_multihop_false_chain,qwen3_14b_thinking,6,0,6,,,,,,,1.0,

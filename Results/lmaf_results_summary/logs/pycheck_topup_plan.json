@@ -1,0 +1,340 @@
+{
+  "experiments": [
+    "niah"
+  ],
+  "manifest": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\data\\processed\\official_budget_topup\\pycheck_topup\\budget_manifest.jsonl",
+  "models": [
+    {
+      "alias": "qwen35_9b",
+      "api_model": "Qwen/Qwen3.5-9B",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "qwen3_8b",
+      "api_model": "Qwen/Qwen3-8B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen35_27b",
+      "api_model": "Qwen/Qwen3.5-27B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen35_35b_a3b",
+      "api_model": "Qwen/Qwen3.5-35B-A3B",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "qwen35_122b_a10b",
+      "api_model": "Qwen/Qwen3.5-122B-A10B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "hunyuan_a13b",
+      "api_model": "tencent/Hunyuan-A13B-Instruct",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "seed_oss_36b",
+      "api_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen3_14b_no_thinking",
+      "api_model": "Qwen/Qwen3-14B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen3_14b_thinking",
+      "api_model": "Qwen/Qwen3-14B",
+      "enable_thinking": true,
+      "max_model_len": 32768
+    }
+  ],
+  "output_root": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\results\\raw\\test_official_topup\\pycheck_topup",
+  "pending_api_calls": 9,
+  "run_id": "pycheck_topup",
+  "selected_counts": {
+    "niah": 4
+  },
+  "stats": [
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "terminal_skip"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "mode": "pac_v21_full_no_hunyuan_queue",
+  "pending_by_subset_model": [
+    {
+      "completed_success_or_terminal": 67,
+      "latest_api_error_rows": 5,
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 5,
+      "subset": "PAC-C_binding_capacity",
+      "target_calls": 72
+    },
+    {
+      "completed_success_or_terminal": 66,
+      "latest_api_error_rows": 6,
+      "model": "seed_oss_36b",
+      "pending_api_calls": 6,
+      "subset": "PAC-C_binding_capacity",
+      "target_calls": 72
+    },
+    {
+      "completed_success_or_terminal": 10,
+      "latest_api_error_rows": 2,
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 2,
+      "subset": "PAC-D_multihop_false_chain",
+      "target_calls": 12
+    },
+    {
+      "completed_success_or_terminal": 11,
+      "latest_api_error_rows": 1,
+      "model": "seed_oss_36b",
+      "pending_api_calls": 1,
+      "subset": "PAC-D_multihop_false_chain",
+      "target_calls": 12
+    }
+  ],
+  "rate_control": {
+    "connection_burst_threshold": 2,
+    "connection_burst_window_sec": 120.0,
+    "connection_cooldown_sec": 300.0,
+    "connection_max_attempts": 1,
+    "global_connection_cooldown_sec": 300.0,
+    "global_request_delay_sec": 45.0,
+    "model_rate_limit_cooldown_sec": 300.0,
+    "per_key_delay_sec": 0.0,
+    "queue_max_attempts": 4,
+    "rate_limit_cooldown_sec": 180.0,
+    "rerun_successes": false,
+    "sdk_retry": 1,
+    "slots_per_key": 1,
+    "timeout": 720.0,
+    "transient_cooldown_sec": 60.0
+  },
+  "run_id": "pac_v21_full_queue",
+  "selected_models": [
+    "qwen3_14b_thinking",
+    "seed_oss_36b"
+  ],
+  "selected_subsets": [
+    "C",
+    "D21"
+  ],
+  "target_api_calls": 168,
+  "total_pending_api_calls": 14,
+  "unique_samples": 84
+}

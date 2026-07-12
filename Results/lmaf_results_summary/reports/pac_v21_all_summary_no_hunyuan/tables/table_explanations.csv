@@ -1,0 +1,14 @@
+﻿table,explanation
+dataset_summary,说明 PAC v2.1 各子集的数据规模、条件设置和样本文件位置，用于交代正式实验设计和每个子集承担的诊断目标。
+raw_result_index,逐样本结果索引，保留答案、预测、错误类型和来源文件，便于回查热力图或曲线中任一分数背后的原始输出。
+summary_by_subset_model,按 PAC 子集和模型聚合，展示准确率、覆盖率、字段准确率、诱饵捕获率等指标，是论文主表的核心来源。
+summary_by_condition_model,按子集条件进一步拆分模型表现，例如位置、干扰数、绑定容量和多跳假链设置，用于画条件曲线和热力图。
+summary_by_model_overall,按模型汇总所有已完成 PAC v2.1 样本，同时给出 success-only 和保守准确率，便于比较总体抗干扰能力。
+summary_by_subset_overall,按 PAC-A/B/C/D 子集汇总整体难度和覆盖率，帮助判断哪个子集最能区分模型、哪个子集仍需补跑。
+error_types,统计 correct、partial、decoy capture、omission、request error 等错误类型，说明模型失败来自绑定错乱还是 API 未返回。
+error_examples,每类典型错误抽样，展示模型如何答错，例如字段顺序错误、捕获干扰值或只答出部分三元组。
+pac_A_position_accuracy_pivot,PAC-A 的位置效应透视表，比较 10%、25%、50%、75%、90% 位置下各模型在高相似干扰中的准确率。
+pac_B_interference_accuracy_pivot,PAC-B 的干扰密度透视表，展示 decoy 数增加时模型准确率变化，可用于寻找临界干扰强度和鲁棒性斜率。
+pac_C_binding_accuracy_pivot,PAC-C 的实体绑定容量透视表，比较不同 K/Q 设置下模型能否保持多实体属性绑定关系。
+pac_D_v21_multihop_accuracy_pivot,PAC-D v2.1 的多跳假链透视表，展示 hop 数和假链数变化时模型链路追踪与最终字段绑定稳定性。
+table_explanations,本页汇总 PAC v2.1 各数据表用途说明，方便阅读者把表格指标和论文中的实验问题对应起来。

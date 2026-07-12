@@ -1,0 +1,16 @@
+﻿variant,length_tokens_target,position_percent,distribution,hop,samples
+multi,16384,,clustered,,50
+multi,16384,,uniform,,50
+multi,32768,,clustered,,50
+multi,32768,,uniform,,50
+sequential,16384,,,2,50
+sequential,32768,,,2,50
+single,4096,10,,,50
+single,4096,50,,,50
+single,4096,90,,,50
+single,32768,10,,,50
+single,32768,50,,,50
+single,32768,90,,,50
+single,65536,10,,,50
+single,65536,50,,,50
+single,65536,90,,,50

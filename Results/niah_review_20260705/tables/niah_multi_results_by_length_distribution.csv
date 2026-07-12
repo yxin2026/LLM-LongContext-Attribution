@@ -1,0 +1,37 @@
+﻿model,length,distribution,target_n,success_n,completion_rate_pct,accuracy_completed_pct,raw_exact_completed_pct,accuracy_all_target_missing0_pct,top_unfinished_error
+qwen3_8b,16384,clustered,50,30,60.0,100.0,100.0,60.0,429_tpm_limit:20
+qwen3_8b,16384,uniform,50,41,82.0,75.61,75.61,62.0,429_tpm_limit:9
+qwen3_8b,32768,clustered,50,25,50.0,100.0,100.0,50.0,429_tpm_limit:25
+qwen3_8b,32768,uniform,50,22,44.0,100.0,100.0,44.0,429_tpm_limit:28
+qwen35_9b,16384,clustered,50,50,100.0,100.0,100.0,100.0,
+qwen35_9b,16384,uniform,50,50,100.0,100.0,100.0,100.0,
+qwen35_9b,32768,clustered,50,31,62.0,100.0,100.0,62.0,429_tpm_limit:19
+qwen35_9b,32768,uniform,50,30,60.0,100.0,100.0,60.0,429_tpm_limit:20
+qwen3_14b_no_thinking,16384,clustered,50,2,4.0,100.0,100.0,4.0,403_balance:42; 429_tpm_limit:6
+qwen3_14b_no_thinking,16384,uniform,50,3,6.0,100.0,100.0,6.0,403_balance:42; 429_tpm_limit:5
+qwen3_14b_no_thinking,32768,clustered,50,3,6.0,66.67,66.67,4.0,403_balance:42; 429_tpm_limit:5
+qwen3_14b_no_thinking,32768,uniform,50,4,8.0,100.0,100.0,8.0,403_balance:37; 429_tpm_limit:9
+qwen3_14b_thinking,16384,clustered,50,1,2.0,100.0,100.0,2.0,403_balance:42; 429_tpm_limit:6; BadRequestError('<html>\r\n<head><title>400 Bad Request</title></head>\r\n<body :1
+qwen3_14b_thinking,16384,uniform,50,5,10.0,100.0,100.0,10.0,403_balance:38; 429_tpm_limit:7
+qwen3_14b_thinking,32768,clustered,50,4,8.0,75.0,75.0,6.0,403_balance:40; 429_tpm_limit:5; 401_invalid_key:1
+qwen3_14b_thinking,32768,uniform,50,6,12.0,100.0,100.0,12.0,403_balance:35; 429_tpm_limit:9
+hunyuan_a13b,16384,clustered,50,2,4.0,50.0,50.0,2.0,403_balance:39; 429_tpm_limit:9
+hunyuan_a13b,16384,uniform,50,1,2.0,100.0,100.0,2.0,403_balance:40; 429_tpm_limit:9
+hunyuan_a13b,32768,clustered,50,2,4.0,0.0,0.0,0.0,403_balance:41; 429_tpm_limit:6; 401_invalid_key:1
+hunyuan_a13b,32768,uniform,50,1,2.0,0.0,0.0,0.0,403_balance:41; 429_tpm_limit:7; 401_invalid_key:1
+qwen35_27b,16384,clustered,50,28,56.0,100.0,100.0,56.0,429_tpm_limit:22
+qwen35_27b,16384,uniform,50,39,78.0,100.0,100.0,78.0,429_tpm_limit:11
+qwen35_27b,32768,clustered,50,25,50.0,100.0,100.0,50.0,429_tpm_limit:25
+qwen35_27b,32768,uniform,50,20,40.0,100.0,100.0,40.0,429_tpm_limit:30
+qwen35_35b_a3b,16384,clustered,50,24,48.0,100.0,100.0,48.0,429_tpm_limit:26
+qwen35_35b_a3b,16384,uniform,50,38,76.0,100.0,100.0,76.0,429_tpm_limit:12
+qwen35_35b_a3b,32768,clustered,50,16,32.0,100.0,100.0,32.0,429_tpm_limit:33; 401_invalid_key:1
+qwen35_35b_a3b,32768,uniform,50,17,34.0,100.0,100.0,34.0,429_tpm_limit:33
+seed_oss_36b,16384,clustered,50,2,4.0,100.0,100.0,4.0,403_balance:42; 429_tpm_limit:6
+seed_oss_36b,16384,uniform,50,4,8.0,100.0,100.0,8.0,403_balance:33; 429_tpm_limit:13
+seed_oss_36b,32768,clustered,50,3,6.0,100.0,100.0,6.0,403_balance:38; 429_tpm_limit:8; 401_invalid_key:1
+seed_oss_36b,32768,uniform,50,3,6.0,100.0,100.0,6.0,403_balance:34; 429_tpm_limit:11; 401_invalid_key:2
+qwen35_122b_a10b,16384,clustered,50,3,6.0,100.0,100.0,6.0,403_balance:42; 429_tpm_limit:5
+qwen35_122b_a10b,16384,uniform,50,3,6.0,100.0,100.0,6.0,403_balance:42; 429_tpm_limit:5
+qwen35_122b_a10b,32768,clustered,50,4,8.0,100.0,100.0,8.0,403_balance:40; 429_tpm_limit:5; 401_invalid_key:1
+qwen35_122b_a10b,32768,uniform,50,2,4.0,100.0,100.0,4.0,403_balance:42; 429_tpm_limit:5; 401_invalid_key:1

@@ -1,0 +1,22 @@
+﻿path,exists,purpose,size_bytes,line_count,sha256,last_modified,snapshot_path
+scripts/run_longbench.py,True,Prepare and run LongBench evaluations.,7006,175,50e39e5ec1f3a2d0922da5c8b8111ac13439b6cd837064d41aacbb621ef44196,2026-06-29 19:08:46,code_snapshot\scripts\run_longbench.py
+scripts/run_ruler.py,True,Prepare and run RULER/fallback synthetic evaluations.,6533,169,0e31b610c06f37f67e20ecef445d5f979254e43e53fddd9925bd98e87aaa7d40,2026-06-29 19:08:26,code_snapshot\scripts\run_ruler.py
+scripts/run_longbench_ruler_batch.py,True,Batch runner for LongBench and RULER model sweeps.,16094,424,8ee57b5acb0fcf6eef95b19ce317a63f0771e376827fcdca850b8d3eea14e230,2026-06-29 19:13:25,code_snapshot\scripts\run_longbench_ruler_batch.py
+scripts/run_niah.py,True,Generate and run NIAH variants.,8193,199,f2dc40778c43a476d633bf4b040941319a3bf9695a6d36cb29bf76203eb8ed1a,2026-06-29 15:13:24,code_snapshot\scripts\run_niah.py
+scripts/run_niah_batch.py,True,Batch runner for NIAH suites.,9864,266,edcb29cbe1c4671ada799c24475eeb1cd2a3ec90d962983735963a024bd04fef,2026-06-29 14:36:11,code_snapshot\scripts\run_niah_batch.py
+scripts/aggregate_results.py,True,Generic JSONL-to-CSV aggregation utility.,10552,284,afa7d919deee560917be2d989178eb017b110b05e4dc1ee21c49a2ede793cbd5,2026-06-30 20:23:14,code_snapshot\scripts\aggregate_results.py
+scripts/plot_results.py,True,Generic plotting utility for aggregated benchmark results.,6877,190,225936e2953ca35ab20c7dc3dd8b3143efbe8e0a3cdb4c6de88eb1f66a7094f3,2026-06-29 19:12:46,code_snapshot\scripts\plot_results.py
+scripts/summarize_public_benchmarks.py,True,Publication-style LongBench/NIAH/RULER summary generator.,40853,1006,c179ccdd5190d9087dac92a0c4287018698180094b9374a33e052d3cae982303,2026-07-07 23:01:02,code_snapshot\scripts\summarize_public_benchmarks.py
+scripts/build_public_benchmarks_workbook.mjs,True,Excel workbook builder for public benchmark summary tables.,5398,167,ffe83cd8ba5be1ae6cb68478a91948ca52a6ff4352b3843edf21717a3f5e49db,2026-07-07 22:18:35,code_snapshot\scripts\build_public_benchmarks_workbook.mjs
+scripts/run_official_budget_topup.py,True,Budgeted top-up runner used for later official-data experiments.,23102,602,032ab37cb370436f90ddf675e546ff72048e7db712098c20883dc46b5509de86,2026-07-06 17:22:16,code_snapshot\scripts\run_official_budget_topup.py
+scripts/generate_official_niah.py,True,Official-style NIAH data generator.,15593,418,1427a94c38875d4aaa79f6265d6efc27332c7653df20f49398fcd05dcf738137,2026-07-06 14:39:14,code_snapshot\scripts\generate_official_niah.py
+scripts/generate_official_ruler.py,True,Official-style RULER data generator.,10978,282,b2f9dcda1acb7b73d4ff398cf45b81ba726068ac3817b6b9cba4c905ee201c7b,2026-07-06 14:41:51,code_snapshot\scripts\generate_official_ruler.py
+src/lmaf/data/longbench.py,True,LongBench data preparation logic.,8518,228,fce592ae676c17805a373da7c60c74de4c608ef0ecffd64d66a4d69e180bcf86,2026-06-29 19:30:12,code_snapshot\src\lmaf\data\longbench.py
+src/lmaf/data/niah.py,True,NIAH sample construction logic.,8072,242,a732a9b7d6f5a9bd4b9673bd827a5e1141e44470915c7d26e428a5368cd654a6,2026-06-26 23:29:41,code_snapshot\src\lmaf\data\niah.py
+src/lmaf/data/ruler.py,False,RULER/fallback sample construction logic.,,,,,
+src/lmaf/eval/metrics.py,True,Shared scoring and statistics helpers.,4666,142,8a63f7ddb999409f1d74b569daf0b3c0cf61dc13d3d2d2aed4b30a23ba1c2b3f,2026-06-26 23:27:40,code_snapshot\src\lmaf\eval\metrics.py
+src/lmaf/providers.py,False,Provider/API dispatch layer.,,,,,
+src/lmaf/utils/models.py,True,Model filtering and excluded-model registry.,340,15,6b794e8e930b98ad7fa95fad4224b51f7fbd0c4fffd310c5c01b8eec82890d49,2026-06-29 14:33:02,code_snapshot\src\lmaf\utils\models.py
+requirements.txt,True,Python dependency list.,207,22,af69dffff77f0840f9a91f557ab90b5d86fa4e8d370f058bbd70532fd0c22220,2026-07-06 14:03:24,code_snapshot\requirements.txt
+pyproject.toml,True,Project metadata.,70,4,4f69859fef802811eb62db0fdeb6a6520e4e9e77923dc7e41f76b268baf68209,2026-06-26 23:27:40,code_snapshot\pyproject.toml
+README.md,True,Project usage notes.,7047,186,509c7a066f38bd64643751493b2cec75a38fdd41daee5aed62e027c0a2e97373,2026-06-30 20:32:17,code_snapshot\README.md

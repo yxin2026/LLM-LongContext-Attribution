@@ -1,0 +1,64 @@
+dataset,experiment,model,status,expected_samples,raw_rows,unique_final_rows,success_rows,terminal_skips,retryable_errors,missing_samples_est,duplicate_rows_removed,completion_rate,source_file,notes
+NIAH framework_v2_without_fast16k,niah,hunyuan_a13b,incomplete,750,750,750,0,0,750,0,0,0.0,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\hunyuan_a13b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen35_122b_a10b,incomplete,750,750,750,0,150,600,0,0,0.2,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen35_122b_a10b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen35_27b,incomplete,750,750,750,333,150,267,0,0,0.644,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen35_27b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen35_35b_a3b,incomplete,750,750,750,294,0,456,0,0,0.392,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen35_35b_a3b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen35_9b,incomplete,750,750,750,505,0,245,0,0,0.673333,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen35_9b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen3_14b_no_thinking,incomplete,750,750,750,0,150,600,0,0,0.2,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen3_14b_no_thinking.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen3_14b_thinking,incomplete,750,750,750,0,150,600,0,0,0.2,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen3_14b_thinking.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,qwen3_8b,incomplete,750,750,750,357,150,243,0,0,0.676,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\qwen3_8b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+NIAH framework_v2_without_fast16k,niah,seed_oss_36b,incomplete,750,750,750,0,150,600,0,0,0.2,results\raw\niah_batch\framework_v2_without_fast16k\framework_v2_extra\seed_oss_36b.jsonl,This is the no-fast16k continuation suite in the current workspace.
+LongBench framework_v2,longbench,hunyuan_a13b,incomplete,1750,6784,1750,1373,0,377,0,5034,0.784571,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\hunyuan_a13b.jsonl,
+LongBench framework_v2,longbench,qwen35_122b_a10b,incomplete,1750,6910,1750,1304,88,358,0,5160,0.795429,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen35_122b_a10b.jsonl,
+LongBench framework_v2,longbench,qwen35_27b,incomplete,1750,4301,1750,1625,88,37,0,2551,0.978857,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen35_27b.jsonl,
+LongBench framework_v2,longbench,qwen35_35b_a3b,incomplete,1750,5580,1750,1674,0,76,0,3830,0.956571,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen35_35b_a3b.jsonl,
+LongBench framework_v2,longbench,qwen35_9b,incomplete,1750,1945,1750,1749,0,1,0,195,0.999429,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen35_9b.jsonl,
+LongBench framework_v2,longbench,qwen3_14b_no_thinking,incomplete,1750,3556,1750,1563,88,99,0,1806,0.943429,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen3_14b_no_thinking.jsonl,
+LongBench framework_v2,longbench,qwen3_14b_thinking,incomplete,1750,2995,1750,700,88,962,0,1245,0.450286,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen3_14b_thinking.jsonl,
+LongBench framework_v2,longbench,qwen3_8b,incomplete,1750,3832,1750,1613,88,49,0,2082,0.972,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\qwen3_8b.jsonl,
+LongBench framework_v2,longbench,seed_oss_36b,incomplete,1750,4968,1750,1589,88,73,0,3218,0.958286,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\longbench\seed_oss_36b.jsonl,
+RULER framework_v2,ruler,hunyuan_a13b,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\hunyuan_a13b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen35_122b_a10b,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen35_122b_a10b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen35_27b,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen35_27b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen35_35b_a3b,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen35_35b_a3b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen35_9b,incomplete,900,1800,900,145,0,755,0,900,0.161111,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen35_9b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen3_14b_no_thinking,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen3_14b_no_thinking.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen3_14b_thinking,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen3_14b_thinking.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,qwen3_8b,incomplete,900,1305,900,259,0,641,0,405,0.287778,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\qwen3_8b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+RULER framework_v2,ruler,seed_oss_36b,incomplete,900,900,900,0,0,900,0,0,0.0,results\raw\longbench_ruler_batch\framework_v2\longbench_ruler_main\ruler\seed_oss_36b.jsonl,Expected count follows the configured fallback suite: 6 tasks x 3 lengths x 50 samples.
+PAC A position,pac,hunyuan_a13b,incomplete,1000,3051,1000,734,0,266,0,2051,0.734,results\raw\pac_batch\pac_main\A\hunyuan_a13b.jsonl,
+PAC A position,pac,qwen35_122b_a10b,incomplete,1000,3227,1000,704,0,296,0,2227,0.704,results\raw\pac_batch\pac_main\A\qwen35_122b_a10b.jsonl,
+PAC A position,pac,qwen35_27b,incomplete,1000,1801,1000,931,0,69,0,801,0.931,results\raw\pac_batch\pac_main\A\qwen35_27b.jsonl,
+PAC A position,pac,qwen35_35b_a3b,incomplete,1000,2741,1000,916,0,84,0,1741,0.916,results\raw\pac_batch\pac_main\A\qwen35_35b_a3b.jsonl,
+PAC A position,pac,qwen35_9b,complete,1000,1223,1000,1000,0,0,0,223,1.0,results\raw\pac_batch\pac_main\A\qwen35_9b.jsonl,
+PAC A position,pac,qwen3_14b_no_thinking,incomplete,1000,2650,1000,884,0,116,0,1650,0.884,results\raw\pac_batch\pac_main\A\qwen3_14b_no_thinking.jsonl,
+PAC A position,pac,qwen3_14b_thinking,incomplete,1000,2445,1000,884,0,116,0,1445,0.884,results\raw\pac_batch\pac_main\A\qwen3_14b_thinking.jsonl,
+PAC A position,pac,qwen3_8b,incomplete,1000,1659,1000,892,0,108,0,659,0.892,results\raw\pac_batch\pac_main\A\qwen3_8b.jsonl,
+PAC A position,pac,seed_oss_36b,incomplete,1000,3034,1000,730,0,270,0,2034,0.73,results\raw\pac_batch\pac_main\A\seed_oss_36b.jsonl,
+PAC B interference,pac,hunyuan_a13b,incomplete,1800,1800,1800,0,0,1800,0,0,0.0,results\raw\pac_batch\pac_main\B\hunyuan_a13b.jsonl,
+PAC B interference,pac,qwen35_122b_a10b,incomplete,1800,1800,1800,0,0,1800,0,0,0.0,results\raw\pac_batch\pac_main\B\qwen35_122b_a10b.jsonl,
+PAC B interference,pac,qwen35_27b,incomplete,1800,2404,1800,1371,0,429,0,604,0.761667,results\raw\pac_batch\pac_main\B\qwen35_27b.jsonl,
+PAC B interference,pac,qwen35_35b_a3b,incomplete,1800,3351,1800,103,0,1697,0,1551,0.057222,results\raw\pac_batch\pac_main\B\qwen35_35b_a3b.jsonl,
+PAC B interference,pac,qwen35_9b,incomplete,1800,2569,1800,1727,0,73,0,769,0.959444,results\raw\pac_batch\pac_main\B\qwen35_9b.jsonl,
+PAC B interference,pac,qwen3_14b_no_thinking,incomplete,1800,1800,1800,0,0,1800,0,0,0.0,results\raw\pac_batch\pac_main\B\qwen3_14b_no_thinking.jsonl,
+PAC B interference,pac,qwen3_14b_thinking,incomplete,1800,567,567,10,0,557,1233,0,0.005556,results\raw\pac_batch\pac_main\B\qwen3_14b_thinking.jsonl,
+PAC B interference,pac,qwen3_8b,incomplete,1800,4306,1800,1353,0,447,0,2506,0.751667,results\raw\pac_batch\pac_main\B\qwen3_8b.jsonl,
+PAC B interference,pac,seed_oss_36b,incomplete,1800,1800,1800,0,0,1800,0,0,0.0,results\raw\pac_batch\pac_main\B\seed_oss_36b.jsonl,
+PAC C overlap,pac,qwen35_9b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,qwen3_8b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,qwen35_27b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,qwen35_35b_a3b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,qwen35_122b_a10b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,hunyuan_a13b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,seed_oss_36b,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,qwen3_14b_no_thinking,missing,600,0,0,0,0,0,600,0,0,,
+PAC C overlap,pac,qwen3_14b_thinking,missing,600,0,0,0,0,0,600,0,0,,
+PAC D multihop,pac,qwen35_9b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,qwen3_8b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,qwen35_27b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,qwen35_35b_a3b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,qwen35_122b_a10b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,hunyuan_a13b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,seed_oss_36b,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,qwen3_14b_no_thinking,missing,1160,0,0,0,0,0,1160,0,0,,
+PAC D multihop,pac,qwen3_14b_thinking,missing,1160,0,0,0,0,0,1160,0,0,,

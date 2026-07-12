@@ -1,0 +1,4 @@
+experiment,subtask,model,accuracy
+longbench,narrativeqa,qwen35_9b,0.7
+longbench,hotpotqa,qwen35_9b,0.8
+longbench,narrativeqa,qwen3_8b,0.6

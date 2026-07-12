@@ -1,0 +1,4 @@
+subset,model,error_type,count
+PAC-D_multihop_false_chain,qwen35_122b_a10b,correct,6
+PAC-D_multihop_false_chain,qwen35_35b_a3b,partial_triplet,6
+PAC-D_multihop_false_chain,qwen3_14b_thinking,request_error,6

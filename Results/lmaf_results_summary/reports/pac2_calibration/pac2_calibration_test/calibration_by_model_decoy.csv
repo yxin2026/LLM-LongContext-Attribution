@@ -1,0 +1,2 @@
+model,decoy_count,n_total,n_eval,n_api_error,accuracy,score_all,decoy_capture_rate,omission_rate,near_miss_rate,api_error_rate,mean_latency
+qwen35_9b,0,3,3,0,1.0,1.0,0.0,0.0,0.0,0.0,9.831

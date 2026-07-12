@@ -1,0 +1,110 @@
+{
+  "all_models": [
+    "qwen35_9b",
+    "qwen3_8b",
+    "qwen35_27b",
+    "qwen35_35b_a3b",
+    "qwen35_122b_a10b",
+    "seed_oss_36b",
+    "hunyuan_a13b",
+    "qwen3_14b_no_thinking",
+    "qwen3_14b_thinking"
+  ],
+  "dataset_name": "PAC-Test 2.0 Formal v5",
+  "difficulty_anchor": {
+    "calibration_run": "pac2_calibration_multidoc_v5_main",
+    "chosen_decoy_count": 64,
+    "reason": "decoy=64 produced the clearest weak/mid/strong separation in calibration."
+  },
+  "length_tokens_target": 32000,
+  "planned_api_calls": 2187,
+  "representative_models": [
+    "qwen35_9b",
+    "qwen35_35b_a3b",
+    "qwen35_122b_a10b",
+    "seed_oss_36b",
+    "qwen3_14b_no_thinking",
+    "qwen3_14b_thinking"
+  ],
+  "subsets": {
+    "PAC-A_position": {
+      "length_tokens_max": 31996,
+      "length_tokens_mean": 31983.77,
+      "length_tokens_min": 31973,
+      "model_scope": "all_9",
+      "models_to_run": [
+        "qwen35_9b",
+        "qwen3_8b",
+        "qwen35_27b",
+        "qwen35_35b_a3b",
+        "qwen35_122b_a10b",
+        "seed_oss_36b",
+        "hunyuan_a13b",
+        "qwen3_14b_no_thinking",
+        "qwen3_14b_thinking"
+      ],
+      "n_samples": 75,
+      "position_actual_max": 90.03,
+      "position_actual_min": 11.18,
+      "subset": "PAC-A_position"
+    },
+    "PAC-B_interference": {
+      "length_tokens_max": 31996,
+      "length_tokens_mean": 31984.32,
+      "length_tokens_min": 31974,
+      "model_scope": "all_9",
+      "models_to_run": [
+        "qwen35_9b",
+        "qwen3_8b",
+        "qwen35_27b",
+        "qwen35_35b_a3b",
+        "qwen35_122b_a10b",
+        "seed_oss_36b",
+        "hunyuan_a13b",
+        "qwen3_14b_no_thinking",
+        "qwen3_14b_thinking"
+      ],
+      "n_samples": 72,
+      "position_actual_max": 50.03,
+      "position_actual_min": 49.93,
+      "subset": "PAC-B_interference"
+    },
+    "PAC-C_binding_capacity": {
+      "length_tokens_max": 31996,
+      "length_tokens_mean": 31986.46,
+      "length_tokens_min": 31975,
+      "model_scope": "representative_6",
+      "models_to_run": [
+        "qwen35_9b",
+        "qwen35_35b_a3b",
+        "qwen35_122b_a10b",
+        "seed_oss_36b",
+        "qwen3_14b_no_thinking",
+        "qwen3_14b_thinking"
+      ],
+      "n_samples": 72,
+      "position_actual_max": 50.02,
+      "position_actual_min": 49.94,
+      "subset": "PAC-C_binding_capacity"
+    },
+    "PAC-D_multihop_false_chain": {
+      "length_tokens_max": 31996,
+      "length_tokens_mean": 31987.43,
+      "length_tokens_min": 31975,
+      "model_scope": "representative_6",
+      "models_to_run": [
+        "qwen35_9b",
+        "qwen35_35b_a3b",
+        "qwen35_122b_a10b",
+        "seed_oss_36b",
+        "qwen3_14b_no_thinking",
+        "qwen3_14b_thinking"
+      ],
+      "n_samples": 72,
+      "position_actual_max": 50.03,
+      "position_actual_min": 49.93,
+      "subset": "PAC-D_multihop_false_chain"
+    }
+  },
+  "total_unique_samples": 291
+}

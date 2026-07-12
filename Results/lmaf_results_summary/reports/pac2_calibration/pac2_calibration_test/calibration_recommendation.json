@@ -1,0 +1,16 @@
+{
+  "reason": "fallback: closest to useful mean accuracy while preserving model spread",
+  "recommended_decoy_count": 0,
+  "row": {
+    "decoy_count": 0,
+    "ideal_band_match": 0,
+    "max_accuracy": 1.0,
+    "mean_accuracy": 1.0,
+    "min_accuracy": 1.0,
+    "models_observed": 1,
+    "qwen35_122b_a10b": "",
+    "qwen35_35b_a3b": "",
+    "qwen35_9b": 1.0,
+    "strong_minus_weak": ""
+  }
+}

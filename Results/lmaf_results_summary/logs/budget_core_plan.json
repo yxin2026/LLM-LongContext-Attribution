@@ -1,0 +1,1378 @@
+{
+  "experiments": [
+    "niah",
+    "longbench",
+    "ruler",
+    "pac"
+  ],
+  "manifest": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\data\\processed\\budget_core\\budget_core_main\\budget_manifest.jsonl",
+  "models": [
+    {
+      "alias": "qwen35_9b",
+      "api_model": "Qwen/Qwen3.5-9B",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "qwen3_8b",
+      "api_model": "Qwen/Qwen3-8B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen35_27b",
+      "api_model": "Qwen/Qwen3.5-27B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen35_35b_a3b",
+      "api_model": "Qwen/Qwen3.5-35B-A3B",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "qwen35_122b_a10b",
+      "api_model": "Qwen/Qwen3.5-122B-A10B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "hunyuan_a13b",
+      "api_model": "tencent/Hunyuan-A13B-Instruct",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "seed_oss_36b",
+      "api_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen3_14b_no_thinking",
+      "api_model": "Qwen/Qwen3-14B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen3_14b_thinking",
+      "api_model": "Qwen/Qwen3-14B",
+      "enable_thinking": true,
+      "max_model_len": 32768
+    }
+  ],
+  "output_root": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\results\\raw\\budget_core\\budget_core_main",
+  "pending_api_calls": 6290,
+  "run_id": "budget_core_main",
+  "selected_counts": {
+    "longbench": 300,
+    "niah": 300,
+    "pac": 600,
+    "ruler": 240
+  },
+  "stats": [
+    {
+      "count": 51,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 249,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 53,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 247,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 8,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 292,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 8,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 292,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 76,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 224,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 5,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 295,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 10,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 290,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_longbench",
+      "experiment": "longbench",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    },
+    {
+      "count": 285,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 15,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 226,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 74,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 86,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 214,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 173,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 127,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 78,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 222,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 223,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 77,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 219,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 81,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 84,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 216,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 223,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 77,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 300,
+      "dataset_label": "budget_niah",
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    },
+    {
+      "count": 44,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 156,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 44,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 156,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 15,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 185,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 2,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 198,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 15,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 185,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 24,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 176,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 14,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 186,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 46,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 154,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_A",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    },
+    {
+      "count": 186,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 14,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 136,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 64,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 41,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 159,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 161,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 39,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 5,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 195,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 186,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 14,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 182,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 18,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 42,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 158,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 192,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 8,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 200,
+      "dataset_label": "budget_pac_B",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    },
+    {
+      "count": 98,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 2,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 93,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 7,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 86,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 14,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 95,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 5,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 83,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 17,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 94,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 6,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 93,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 7,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 87,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 13,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 96,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 4,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_C",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    },
+    {
+      "count": 97,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 3,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 66,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 34,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 65,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 35,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 90,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 10,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 76,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 24,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 68,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 32,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 66,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 34,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 61,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 39,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 72,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 28,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 100,
+      "dataset_label": "budget_pac_D",
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    },
+    {
+      "count": 231,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 9,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "selected"
+    },
+    {
+      "count": 227,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 13,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "selected"
+    },
+    {
+      "count": 61,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 179,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "selected"
+    },
+    {
+      "count": 215,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 25,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "selected"
+    },
+    {
+      "count": 159,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 81,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "selected"
+    },
+    {
+      "count": 227,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 13,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 226,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 14,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "selected"
+    },
+    {
+      "count": 81,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 159,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "selected"
+    },
+    {
+      "count": 234,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 6,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "reused_existing"
+    },
+    {
+      "count": 240,
+      "dataset_label": "budget_ruler",
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "selected"
+    }
+  ]
+}

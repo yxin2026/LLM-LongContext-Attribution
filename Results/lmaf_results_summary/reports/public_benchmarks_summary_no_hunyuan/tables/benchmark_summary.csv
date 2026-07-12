@@ -1,0 +1,4 @@
+﻿benchmark,n_total,n_eval,n_error,coverage,error_rate,score_mean,score_all,f1_mean,rouge_l_mean,exact_match_mean,latency_mean,prompt_tokens_mean,n_models,n_tasks
+longbench,2400,2225,175,0.927083,0.072917,0.324157,0.30052,0.609078,0.078997,0.278049,14.396039,11506.700417,8,6
+niah,2400,1599,801,0.66625,0.33375,0.987492,0.657917,,,,6.374998,30339.72125,8,3
+ruler,4800,1174,3626,0.244583,0.755417,0.887078,0.216965,0.891635,,0.712947,3.242098,17756.282917,8,4

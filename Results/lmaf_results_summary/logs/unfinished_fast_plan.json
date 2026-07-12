@@ -1,0 +1,374 @@
+[
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 363
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 344
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen35_27b",
+    "pending_api_calls": 28
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 67
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen35_9b",
+    "pending_api_calls": 1
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 94
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 902
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "qwen3_8b",
+    "pending_api_calls": 40
+  },
+  {
+    "experiment": "longbench",
+    "dataset": "longbench_framework_v2",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 68
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 722
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 569
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen35_27b",
+    "pending_api_calls": 226
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 422
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen35_9b",
+    "pending_api_calls": 202
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 569
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 571
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "qwen3_8b",
+    "pending_api_calls": 216
+  },
+  {
+    "experiment": "niah",
+    "dataset": "niah_without_fast16k",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 564
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 251
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 281
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "qwen35_27b",
+    "pending_api_calls": 61
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 80
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 111
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 106
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "qwen3_8b",
+    "pending_api_calls": 95
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_A_A_position",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 262
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 1719
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 1244
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen35_27b",
+    "pending_api_calls": 377
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 1448
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen35_9b",
+    "pending_api_calls": 54
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 1694
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 1718
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "qwen3_8b",
+    "pending_api_calls": 390
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_B_B_interference",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 1720
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 580
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 572
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen35_27b",
+    "pending_api_calls": 529
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 570
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen35_9b",
+    "pending_api_calls": 501
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 569
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 572
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "qwen3_8b",
+    "pending_api_calls": 526
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_C_C_overlap",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 570
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 1126
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 760
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen35_27b",
+    "pending_api_calls": 701
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 1060
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen35_9b",
+    "pending_api_calls": 957
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 760
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 757
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "qwen3_8b",
+    "pending_api_calls": 713
+  },
+  {
+    "experiment": "pac",
+    "dataset": "pac_D_D_multihop",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 765
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "hunyuan_a13b",
+    "pending_api_calls": 879
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen35_122b_a10b",
+    "pending_api_calls": 853
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen35_27b",
+    "pending_api_calls": 430
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen35_35b_a3b",
+    "pending_api_calls": 833
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen35_9b",
+    "pending_api_calls": 616
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen3_14b_no_thinking",
+    "pending_api_calls": 860
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen3_14b_thinking",
+    "pending_api_calls": 866
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "qwen3_8b",
+    "pending_api_calls": 324
+  },
+  {
+    "experiment": "ruler",
+    "dataset": "ruler_framework_v2",
+    "model": "seed_oss_36b",
+    "pending_api_calls": 868
+  }
+]

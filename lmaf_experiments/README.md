@@ -8,6 +8,10 @@ For SiliconFlow-specific setup, read [docs/SILICONFLOW_API.md](docs/SILICONFLOW_
 
 For automatic multi-model NIAH runs based on Framework V2.0, read [docs/NIAH_BATCH.md](docs/NIAH_BATCH.md) and use `scripts/run_niah_batch.py`.
 
+For automatic multi-model LongBench + RULER runs, read [docs/LONGBENCH_RULER_BATCH.md](docs/LONGBENCH_RULER_BATCH.md) and use `scripts/run_longbench_ruler_batch.py`.
+
+For automatic multi-model PAC-Test A/B/C/D runs, read [docs/PAC_BATCH.md](docs/PAC_BATCH.md) and use `scripts/run_pac_batch.py`.
+
 ## Setup
 
 ```bash
@@ -121,7 +125,7 @@ python scripts/plot_results.py --input results/aggregate/pac_all_results.csv --p
 
 ## LongBench
 
-Prepare data from HuggingFace datasets or the official repository prompt config:
+Prepare data from local LongBench JSONL files or HuggingFace `THUDM/LongBench` `data.zip`:
 
 ```bash
 python scripts/run_longbench.py \

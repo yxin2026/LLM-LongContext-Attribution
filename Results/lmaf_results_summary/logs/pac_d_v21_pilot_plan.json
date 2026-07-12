@@ -1,0 +1,31 @@
+{
+  "pending_by_subset_model": [
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 6,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 6,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 6,
+      "subset": "PAC-D_multihop_false_chain"
+    }
+  ],
+  "rate_control": {
+    "max_in_flight": 3,
+    "max_workers": 3,
+    "request_delay_sec": 12.0,
+    "retry": 2,
+    "timeout": 420
+  },
+  "run_id": "pac_d_v21_miniproof",
+  "selected_subsets": [
+    "PAC-D_multihop_false_chain"
+  ],
+  "total_pending_api_calls": 18
+}

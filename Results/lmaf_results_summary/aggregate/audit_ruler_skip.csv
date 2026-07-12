@@ -1,0 +1,3 @@
+experiment,subtask,model,provider,api_model,length,position,density,interference_type,similarity,distance,hops,hop_distance,implementation,n_samples,n_success,accuracy,f1,rouge_l,mean_latency,p50_latency,p95_latency,error_rate,effective_context_length,effective_context_length_abs80,middle_drop,relative_middle_drop,density_accuracy_slope,density_accuracy_pearson,critical_density_threshold,top_error_type
+ruler,niah,qwen35_9b,siliconflow,Qwen/Qwen3.5-9B,4096,50,,,,,,,ruler_fallback,1,0,0.0,,,0.0,0.0,0.0,1.0,4096,,,,,,,
+ruler,variable_tracking,qwen35_9b,siliconflow,Qwen/Qwen3.5-9B,4096,,,,,,,,ruler_fallback,1,0,0.0,,,0.0,0.0,0.0,1.0,4096,,,,,,,

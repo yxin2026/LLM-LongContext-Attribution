@@ -1,162 +1,146 @@
-# NIAH 自动批量测试脚本
+# NIAH Automatic Batch Runs
 
-脚本：
+Script:
 
 ```text
 scripts/run_niah_batch.py
 ```
 
-它用于按 `Framework_V2.0.docx` 的 NIAH 设计自动完成两件事：
+It generates the Framework V2.0 NIAH suite and then runs the selected model profile through the configured provider, usually SiliconFlow.
 
-1. 生成 NIAH 数据。
-2. 按模型列表逐个调用 API/本地服务测试，并保存 JSONL 结果。
-
-## 内置 NIAH 套件
+## Suites
 
 `--suite smoke`
 
 - Single-NIAH
 - 4K
-- 50% 位置
-- 默认 2 条样本
-- 用来确认 API、模型名、评分链路是否正常。
+- 50% position
+- 2 samples by default
+- Best first check for API, model names, and scoring.
 
 `--suite fast16k`
 
 - Single-NIAH
 - 16K
 - 10% / 50% / 90%
-- 默认 50 条/位置
-- 对应 Framework V2.0 的快速 Lost in the Middle 筛查。
+- 50 samples per position by default
+- Fast Lost in the Middle screening.
 
 `--suite framework_v2`
 
-严格按表格生成三类：
+- Single-NIAH: 4K / 16K / 32K / 64K, positions 10% / 50% / 90%
+- Multi-NIAH: 16K / 32K, uniform / clustered
+- Sequential-NIAH: 16K / 32K, chain distribution
 
-- Single-NIAH：4K / 16K / 32K / 64K，位置 10% / 50% / 90%
-- Multi-NIAH：16K / 32K，均匀分布 / 聚集分布
-- Sequential-NIAH：16K / 32K，链式分布
+`--suite framework_v2_without_fast16k`
 
-## 内置模型组
+- Single-NIAH: 4K / 32K / 64K, positions 10% / 50% / 90%
+- Multi-NIAH: 16K / 32K, uniform / clustered
+- Sequential-NIAH: 16K / 32K, chain distribution
+- Use this after `--suite fast16k` has already completed, so Single-NIAH 16K is not rerun.
+
+## Model Profiles
+
+Removed from all default profiles and summaries:
+
+- `deepseek_r1_distill_qwen_14b`
+- `gemma4_26b_a4b`
+- `gemma4_31b`
 
 `--profile minimal`
 
 - `qwen35_9b`
 - `qwen3_8b`
-- `deepseek_r1_distill_qwen_14b`
 
 `--profile single_card`
 
-包含 Framework V2.0 单卡优先顺序里的主线模型：
-
 - `qwen35_9b`
 - `qwen3_8b`
-- `deepseek_r1_distill_qwen_14b`
 - `qwen35_27b`
-- `gemma4_31b`
 - `qwen35_35b_a3b`
-- `gemma4_26b_a4b`
 - `qwen35_122b_a10b`
 
 `--profile all_framework`
 
-包含 Framework V2.0 表格里所有已写入脚本的模型，包括 Hunyuan、Seed-OSS、Qwen3-14B thinking/no-thinking 对照。
+All models currently retained in `run_niah_batch.py`, including Qwen, Hunyuan, Seed-OSS, and Qwen3-14B thinking/no-thinking.
 
-## 推荐执行顺序
+## Recommended Order
 
-先设置 SiliconFlow API key：
+Set the SiliconFlow API key:
 
-```powershell
-$env:SILICONFLOW_API_KEY="sk-你的key"
+```cmd
+set "SILICONFLOW_API_KEY=sk-your-key"
 ```
 
-先看脚本会执行什么，不真正调用 API：
+Preview commands without spending API credits:
 
-```powershell
-python scripts/run_niah_batch.py `
-  --suite smoke `
-  --profile minimal `
-  --dry-run
+```cmd
+python scripts\run_niah_batch.py --suite smoke --profile minimal --dry-run
 ```
 
-再跑最小 smoke：
+Run smoke:
 
-```powershell
-python scripts/run_niah_batch.py `
-  --suite smoke `
-  --profile minimal
+```cmd
+python scripts\run_niah_batch.py --suite smoke --profile minimal
 ```
 
-如果 smoke 正常，再跑 16K 主筛查：
+Run 16K screening:
 
-```powershell
-python scripts/run_niah_batch.py `
-  --suite fast16k `
-  --profile minimal
+```cmd
+python scripts\run_niah_batch.py --suite fast16k --profile all_framework --run-id fast16k_main
 ```
 
-最后再考虑全量 Framework V2.0：
+Run the full Framework V2 NIAH suite:
 
-```powershell
-python scripts/run_niah_batch.py `
-  --suite framework_v2 `
-  --profile single_card
+```cmd
+python scripts\run_niah_batch.py --suite framework_v2 --profile all_framework --run-id framework_v2_main
 ```
 
-## 指定模型
+If `fast16k` is already done and you want to avoid rerunning Single-NIAH 16K:
 
-不用内置 profile，也可以直接指定：
-
-```powershell
-python scripts/run_niah_batch.py `
-  --suite fast16k `
-  --models qwen35_9b,qwen3_8b
+```cmd
+python scripts\run_niah_batch.py --suite framework_v2_without_fast16k --profile all_framework --run-id framework_v2_extra
 ```
 
-也可以传完整 SiliconFlow 模型名：
+Use a fixed `--run-id` for long runs. If the process is interrupted, rerun the exact same command with the same `--run-id`; inner `run_niah.py` calls use `--resume` and will skip completed samples.
 
-```powershell
-python scripts/run_niah_batch.py `
-  --suite smoke `
-  --models Qwen/Qwen3.5-9B
-```
+## Outputs
 
-## 输出位置
-
-数据默认写到：
+Generated samples:
 
 ```text
 data/generated/niah_batch/{suite}/
 ```
 
-结果默认写到：
+Raw results:
 
 ```text
 results/raw/niah_batch/{suite}/{run_id}/{model_alias}.jsonl
 ```
 
-每个结果目录还会写：
+Metadata:
 
 ```text
-niah_batch_metadata.json
+results/raw/niah_batch/{suite}/{run_id}/niah_batch_metadata.json
 ```
 
-## 安全长度处理
+## Aggregation And Plots
 
-脚本内置每个模型的 `max_model_len`。如果样本长度超过模型安全长度，`run_niah.py` 会写入：
+The removed models are filtered out by default when aggregating and plotting, even if old raw files still contain them:
 
-```text
-error=skipped_by_model_length
-metric=skipped_by_model_length
+```cmd
+python scripts\aggregate_results.py --input results\raw\niah_batch\fast16k\RUN_ID --experiment niah --output results\aggregate\niah_fast16k_results.csv
+python scripts\plot_results.py --input results\aggregate\niah_fast16k_results.csv --plot niah_position_curve --output results\figures\niah_fast16k_position_curve.png
 ```
 
-不会真的调用 API。
+Samples marked `skipped_by_model_length` are also excluded from default aggregate CSVs and plots, so unsupported lengths do not appear as false zero-accuracy points. To inspect skipped rows, pass:
 
-## 注意
-
-`framework_v2` 全量样本会比较多，尤其多个模型一起跑会消耗明显 API 额度。建议先跑：
-
-```text
-smoke -> fast16k -> framework_v2
+```cmd
+--include-skipped
 ```
 
+If you ever need to inspect old excluded-model rows, pass:
+
+```cmd
+--include-excluded-models
+```

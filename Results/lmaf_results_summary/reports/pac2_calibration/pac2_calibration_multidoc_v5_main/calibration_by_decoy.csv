@@ -1,0 +1,5 @@
+decoy_count,models_observed,mean_accuracy,mean_field_accuracy,mean_score_all,min_accuracy,max_accuracy,min_eval_per_model,max_api_error_rate,strong_minus_weak,qwen35_9b,qwen35_35b_a3b,qwen35_122b_a10b,ideal_band_match
+32,3,0.2667,0.6222,0.2667,0.2,0.4,5,0.0,0.2,0.2,0.2,0.4,0
+64,3,0.4,0.7111,0.4,0.0,0.8,5,0.0,0.8,0.0,0.4,0.8,0
+128,3,0.3333,0.8667,0.3333,0.2,0.4,5,0.0,-0.2,0.4,0.4,0.2,0
+192,3,0.5333,0.9111,0.5333,0.4,0.8,5,0.0,0.4,0.4,0.4,0.8,0

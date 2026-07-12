@@ -1,0 +1,13 @@
+subset,model,n_total,n_eval,n_api_error,accuracy,mean_field_accuracy,decoy_capture_rate,partial_rate,omission_rate,near_miss_rate,api_error_rate,mean_latency
+PAC-A_position,qwen35_122b_a10b,10,8,2,0.875,1.0,0.0,0.125,0.0,0.0,0.2,4.381
+PAC-A_position,qwen35_35b_a3b,10,10,0,0.3,0.8333,0.2,0.5,0.0,0.0,0.0,4.523
+PAC-A_position,qwen35_9b,10,10,0,0.3,0.7667,0.4,0.3,0.0,0.0,0.0,22.888
+PAC-B_interference,qwen35_122b_a10b,12,8,4,0.25,0.75,0.125,0.625,0.0,0.0,0.3333,4.116
+PAC-B_interference,qwen35_35b_a3b,12,12,0,0.1667,0.8889,0.25,0.5833,0.0,0.0,0.0,9.786
+PAC-B_interference,qwen35_9b,12,12,0,0.1667,0.7222,0.4167,0.4167,0.0,0.0,0.0,16.391
+PAC-C_binding_capacity,qwen35_122b_a10b,18,13,5,0.9231,0.9904,0.0,0.0769,0.0,0.0,0.2778,4.022
+PAC-C_binding_capacity,qwen35_35b_a3b,18,18,0,0.7222,0.9426,0.2778,0.0,0.0,0.0,0.0,4.017
+PAC-C_binding_capacity,qwen35_9b,18,18,0,0.4444,0.8181,0.2778,0.2778,0.0,0.0,0.0,11.456
+PAC-D_multihop_false_chain,qwen35_122b_a10b,18,13,5,1.0,1.0,0.0,0.0,0.0,0.0,0.2778,3.791
+PAC-D_multihop_false_chain,qwen35_35b_a3b,18,18,0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,6.205
+PAC-D_multihop_false_chain,qwen35_9b,18,18,0,0.5556,0.5556,0.3889,0.0,0.0,0.0,0.0,24.28

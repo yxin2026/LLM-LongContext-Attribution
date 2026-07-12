@@ -1,0 +1,9 @@
+{
+  "reason": "ceiling effect: all stable decoy counts are near 100% with almost no model spread",
+  "recommended_decoy_count": null,
+  "suggested_next_decoy_counts": [
+    512,
+    768,
+    1024
+  ]
+}

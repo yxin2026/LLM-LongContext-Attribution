@@ -1,0 +1,78 @@
+{
+  "decoy_counts": [
+    32,
+    64,
+    128,
+    192
+  ],
+  "length": 32000,
+  "output_root": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\results\\raw\\pac2_calibration\\pac2_calibration_multidoc_v5_main",
+  "pending": [
+    {
+      "decoy_count": 32,
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 32,
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 32,
+      "model": "qwen35_9b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 64,
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 64,
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 64,
+      "model": "qwen35_9b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 128,
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 128,
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 128,
+      "model": "qwen35_9b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 192,
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 192,
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 5
+    },
+    {
+      "decoy_count": 192,
+      "model": "qwen35_9b",
+      "pending_api_calls": 5
+    }
+  ],
+  "position": 50,
+  "report_root": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\results\\reports\\pac2_calibration\\pac2_calibration_multidoc_v5_main",
+  "run_id": "pac2_calibration_multidoc_v5_main",
+  "samples_path": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\data\\generated\\pac2_calibration\\pac2_calibration_multidoc_v5_main\\samples.jsonl",
+  "samples_per_cell": 5,
+  "total_pending_api_calls": 60
+}

@@ -1,0 +1,940 @@
+{
+  "experiments": [
+    "niah",
+    "longbench",
+    "ruler",
+    "pac"
+  ],
+  "manifest": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\data\\processed\\official_budget_topup\\official_budget_topup_main\\budget_manifest.jsonl",
+  "models": [
+    {
+      "alias": "qwen35_9b",
+      "api_model": "Qwen/Qwen3.5-9B",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "qwen3_8b",
+      "api_model": "Qwen/Qwen3-8B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen35_27b",
+      "api_model": "Qwen/Qwen3.5-27B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen35_35b_a3b",
+      "api_model": "Qwen/Qwen3.5-35B-A3B",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "qwen35_122b_a10b",
+      "api_model": "Qwen/Qwen3.5-122B-A10B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "hunyuan_a13b",
+      "api_model": "tencent/Hunyuan-A13B-Instruct",
+      "enable_thinking": false,
+      "max_model_len": 65536
+    },
+    {
+      "alias": "seed_oss_36b",
+      "api_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen3_14b_no_thinking",
+      "api_model": "Qwen/Qwen3-14B",
+      "enable_thinking": false,
+      "max_model_len": 32768
+    },
+    {
+      "alias": "qwen3_14b_thinking",
+      "api_model": "Qwen/Qwen3-14B",
+      "enable_thinking": true,
+      "max_model_len": 32768
+    }
+  ],
+  "output_root": "C:\\Users\\GET-DATA402\\Documents\\Codex\\2026-06-26\\files-mentioned-by-the-user-lmaf\\lmaf_experiments\\results\\raw\\official_budget_topup\\official_budget_topup_main",
+  "pending_api_calls": 4435,
+  "run_id": "official_budget_topup_main",
+  "selected_counts": {
+    "longbench": 300,
+    "niah": 300,
+    "pac": 600,
+    "ruler": 240
+  },
+  "stats": [
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "hunyuan_a13b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "hunyuan_a13b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "hunyuan_a13b",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_122b_a10b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_122b_a10b",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_27b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen35_27b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_27b",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_35b_a3b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_35b_a3b",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_9b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen35_9b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen35_9b",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen3_14b_no_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen3_14b_no_thinking",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen3_14b_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen3_14b_thinking",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen3_8b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "qwen3_8b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "qwen3_8b",
+      "status": "target"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "seed_oss_36b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "longbench",
+      "model": "seed_oss_36b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 300,
+      "experiment": "longbench",
+      "model": "seed_oss_36b",
+      "status": "target"
+    },
+    {
+      "count": 5,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 295,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "hunyuan_a13b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 66,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 234,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_122b_a10b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 63,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 237,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_27b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 2,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 298,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_35b_a3b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 2,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 298,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen35_9b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 68,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 232,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_14b_no_thinking",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 61,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 239,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_14b_thinking",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 64,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 236,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "qwen3_8b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 62,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 238,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 300,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "niah",
+      "model": "seed_oss_36b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "hunyuan_a13b",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_122b_a10b",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_27b",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_35b_a3b",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen35_9b",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen3_14b_no_thinking",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen3_14b_thinking",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "qwen3_8b",
+      "status": "target"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 0,
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "reused_credit"
+    },
+    {
+      "count": 600,
+      "experiment": "pac",
+      "model": "seed_oss_36b",
+      "status": "target"
+    },
+    {
+      "count": 3,
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 237,
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "hunyuan_a13b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 4,
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 236,
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen35_122b_a10b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 3,
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 237,
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen35_27b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 3,
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 237,
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen35_35b_a3b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 3,
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 237,
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen35_9b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 5,
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 235,
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen3_14b_no_thinking",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 3,
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "already_in_output"
+    },
+    {
+      "count": 237,
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen3_14b_thinking",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 6,
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 234,
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "qwen3_8b",
+      "status": "terminal_skip"
+    },
+    {
+      "count": 2,
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "already_in_output"
+    },
+    {
+      "count": 238,
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "pending_api"
+    },
+    {
+      "count": 1,
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "reuse_disabled_fresh_run"
+    },
+    {
+      "count": 240,
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "target"
+    },
+    {
+      "count": 0,
+      "experiment": "ruler",
+      "model": "seed_oss_36b",
+      "status": "terminal_skip"
+    }
+  ]
+}

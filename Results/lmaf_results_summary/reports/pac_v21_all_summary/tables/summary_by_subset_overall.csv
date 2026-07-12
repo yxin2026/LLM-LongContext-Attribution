@@ -1,0 +1,5 @@
+﻿subset,n_total,n_eval,n_api_error,coverage,api_error_rate,accuracy_success,accuracy_all_conservative,mean_field_accuracy,mean_field_accuracy_all,decoy_capture_rate,partial_rate,omission_rate,near_miss_rate,mean_latency_sec,prompt_tokens_mean,completion_tokens_mean,condition_sort
+PAC-A_position,675,558,117,0.826667,0.173333,0.22043,0.182222,0.578259,0.478028,0.225806,0.286738,0.12724,0.0,10.92677,35187.951111,75.806452,10.0
+PAC-B_interference,648,542,106,0.83642,0.16358,0.276753,0.231481,0.616856,0.51595,0.219557,0.243542,0.119926,0.0,12.657733,35321.285494,89.767528,0.0
+PAC-C_binding_capacity,432,373,59,0.863426,0.136574,0.568365,0.490741,0.84216,0.727143,0.203753,0.217158,0.0,0.0,16.387231,35910.983796,315.906166,1603.0
+PAC-D_multihop_false_chain,60,51,9,0.85,0.15,0.352941,0.3,0.790865,0.672235,0.019608,0.627451,0.0,0.0,17.245652,36015.7,365.431373,416.0

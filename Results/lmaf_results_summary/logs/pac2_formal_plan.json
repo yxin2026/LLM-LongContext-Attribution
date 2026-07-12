@@ -1,0 +1,169 @@
+{
+  "pending_by_subset_model": [
+    {
+      "model": "hunyuan_a13b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen35_27b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen35_9b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "qwen3_8b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 75,
+      "subset": "PAC-A_position"
+    },
+    {
+      "model": "hunyuan_a13b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen35_27b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen35_9b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen3_8b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 72,
+      "subset": "PAC-B_interference"
+    },
+    {
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 72,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 72,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen35_9b",
+      "pending_api_calls": 72,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 72,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 72,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 72,
+      "subset": "PAC-C_binding_capacity"
+    },
+    {
+      "model": "qwen35_122b_a10b",
+      "pending_api_calls": 72,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "qwen35_35b_a3b",
+      "pending_api_calls": 72,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "qwen35_9b",
+      "pending_api_calls": 72,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "qwen3_14b_no_thinking",
+      "pending_api_calls": 72,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "qwen3_14b_thinking",
+      "pending_api_calls": 72,
+      "subset": "PAC-D_multihop_false_chain"
+    },
+    {
+      "model": "seed_oss_36b",
+      "pending_api_calls": 72,
+      "subset": "PAC-D_multihop_false_chain"
+    }
+  ],
+  "rate_control": {
+    "max_in_flight": 3,
+    "max_workers": 3,
+    "request_delay_sec": 10.0,
+    "retry": 2,
+    "timeout": 360
+  },
+  "run_id": "pac2_formal_v5_main",
+  "selected_subsets": [
+    "PAC-A_position",
+    "PAC-B_interference",
+    "PAC-C_binding_capacity",
+    "PAC-D_multihop_false_chain"
+  ],
+  "total_pending_api_calls": 2187
+}

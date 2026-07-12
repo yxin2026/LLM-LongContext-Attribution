@@ -1,0 +1,17 @@
+﻿table,explanation
+source_runs,记录本次公开基准汇总使用的原始结果目录、文件数量和错误行数，用于确认 LongBench、NIAH、RULER 的数据来源是否一致可追溯。
+raw_public_rows_dedup,去重后的逐样本结果索引，保留模型、任务、分数、错误和来源文件，便于回查任意图表中某个分数对应的原始实验行。
+coverage_by_benchmark_model,按基准和模型统计 API 成功覆盖率。该表用于区分模型能力差异和额度、限流、连接错误造成的未完成样本。
+benchmark_summary,三个公开基准的整体概览，包括样本数、成功覆盖率和平均分。适合放在论文公开基准小节开头说明实验规模。
+longbench_by_model,LongBench 按模型聚合的平均成绩，反映模型在真实长文本问答、摘要和多文档理解任务上的通用能力背景。
+longbench_by_task_model,LongBench 分任务分模型结果，用来观察模型在哪些真实任务类型上更强，避免只用总平均掩盖任务间差异。
+longbench_by_category_model,LongBench 按任务家族汇总，便于比较单文档问答、多文档问答和摘要任务之间的能力差异。
+niah_by_subtask_model,NIAH 三类变体的模型表现，用于说明普通检索任务是否出现天花板效应，以及各模型基础召回能力是否充分。
+niah_by_condition_model,NIAH 按变体、长度、位置和分布拆分的条件结果，可用于回查位置效应、长度效应和多针设置下的具体表现。
+niah_single_position,单针 NIAH 的位置曲线表，重点观察 10%、50%、90% 等位置下是否存在中间位置召回下降。
+niah_middle_drop,根据边缘位置和中间位置计算 middle drop，作为 Lost in the Middle 现象的紧凑指标。
+ruler_by_task_model,RULER 按任务和模型汇总，当前保留 niah、qa_hotpotqa、qa_squad、variable_tracking，去除 words 类异常任务。
+ruler_by_task_length_model,RULER 按任务、长度和模型拆分，用于观察上下文长度增加时各任务准确率是否稳定或下降。
+ruler_effective_context,根据 RULER 长度曲线估计有效上下文长度，辅助判断模型标称窗口和实际可用窗口之间的差异。
+code_inventory,记录生成公开基准结果相关脚本和源码快照，便于论文附录或复现实验时说明代码来源。
+table_explanations,本页汇总各表用途说明，帮助阅读者理解每张表对应的实验问题和适合支撑的论文结论。

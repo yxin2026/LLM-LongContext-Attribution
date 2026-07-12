@@ -1,0 +1,4 @@
+﻿benchmark,root,included,jsonl_files,raw_rows_seen,raw_errors_seen,last_modified,note
+longbench,results\raw\budget_core\budget_core_main\longbench,True,9,2700,200,2026-07-06 02:41:49,primary public-benchmark source selected for paper summary
+niah,results\raw\budget_core\budget_core_main\niah,True,9,2700,936,2026-07-06 02:42:00,primary public-benchmark source selected for paper summary
+ruler,results\raw\budget_core\budget_core_main\ruler,True,9,2160,576,2026-07-06 02:41:52,primary public-benchmark source selected for paper summary

@@ -1,0 +1,20 @@
+{
+  "reason": "fallback: closest to useful mean accuracy while preserving model spread",
+  "recommended_decoy_count": 64,
+  "row": {
+    "decoy_count": 64,
+    "ideal_band_match": 0,
+    "max_accuracy": 0.8,
+    "max_api_error_rate": 0.0,
+    "mean_accuracy": 0.4,
+    "mean_field_accuracy": 0.7111,
+    "mean_score_all": 0.4,
+    "min_accuracy": 0.0,
+    "min_eval_per_model": 5,
+    "models_observed": 3,
+    "qwen35_122b_a10b": 0.8,
+    "qwen35_35b_a3b": 0.4,
+    "qwen35_9b": 0.0,
+    "strong_minus_weak": 0.8
+  }
+}

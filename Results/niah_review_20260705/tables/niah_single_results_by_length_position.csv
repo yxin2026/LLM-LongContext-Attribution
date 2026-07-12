@@ -1,0 +1,82 @@
+﻿model,length,position_percent,target_n,success_n,completion_rate_pct,accuracy_completed_pct,raw_exact_completed_pct,accuracy_all_target_missing0_pct,top_unfinished_error
+qwen3_8b,4096,10,50,50,100.0,100.0,100.0,100.0,
+qwen3_8b,4096,50,50,50,100.0,98.0,98.0,98.0,
+qwen3_8b,4096,90,50,50,100.0,100.0,100.0,100.0,
+qwen3_8b,32768,10,50,23,46.0,100.0,100.0,46.0,429_tpm_limit:27
+qwen3_8b,32768,50,50,22,44.0,100.0,100.0,44.0,429_tpm_limit:28
+qwen3_8b,32768,90,50,21,42.0,100.0,100.0,42.0,429_tpm_limit:29
+qwen3_8b,65536,10,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_8b,65536,50,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_8b,65536,90,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_9b,4096,10,50,50,100.0,100.0,100.0,100.0,
+qwen35_9b,4096,50,50,50,100.0,100.0,100.0,100.0,
+qwen35_9b,4096,90,50,50,100.0,100.0,100.0,100.0,
+qwen35_9b,32768,10,50,33,66.0,100.0,100.0,66.0,429_tpm_limit:17
+qwen35_9b,32768,50,50,33,66.0,100.0,100.0,66.0,429_tpm_limit:17
+qwen35_9b,32768,90,50,31,62.0,100.0,100.0,62.0,429_tpm_limit:19
+qwen35_9b,65536,10,50,23,46.0,100.0,100.0,46.0,429_tpm_limit:27
+qwen35_9b,65536,50,50,20,40.0,100.0,100.0,40.0,429_tpm_limit:30
+qwen35_9b,65536,90,50,22,44.0,100.0,100.0,44.0,429_tpm_limit:28
+qwen3_14b_no_thinking,4096,10,50,2,4.0,100.0,100.0,4.0,403_balance:42; 429_tpm_limit:6
+qwen3_14b_no_thinking,4096,50,50,3,6.0,100.0,100.0,6.0,403_balance:39; 429_tpm_limit:8
+qwen3_14b_no_thinking,4096,90,50,2,4.0,100.0,100.0,4.0,403_balance:36; 429_tpm_limit:10; 401_invalid_key:2
+qwen3_14b_no_thinking,32768,10,50,6,12.0,100.0,100.0,12.0,403_balance:38; 429_tpm_limit:5; 401_invalid_key:1
+qwen3_14b_no_thinking,32768,50,50,1,2.0,100.0,100.0,2.0,403_balance:37; 429_tpm_limit:12
+qwen3_14b_no_thinking,32768,90,50,4,8.0,100.0,100.0,8.0,403_balance:41; 429_tpm_limit:4; 401_invalid_key:1
+qwen3_14b_no_thinking,65536,10,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_14b_no_thinking,65536,50,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_14b_no_thinking,65536,90,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_14b_thinking,4096,10,50,3,6.0,100.0,100.0,6.0,403_balance:42; 429_tpm_limit:5
+qwen3_14b_thinking,4096,50,50,3,6.0,100.0,100.0,6.0,403_balance:40; 429_tpm_limit:7
+qwen3_14b_thinking,4096,90,50,4,8.0,100.0,100.0,8.0,403_balance:40; 429_tpm_limit:5; 401_invalid_key:1
+qwen3_14b_thinking,32768,10,50,3,6.0,100.0,100.0,6.0,403_balance:40; 429_tpm_limit:7
+qwen3_14b_thinking,32768,50,50,1,2.0,100.0,100.0,2.0,403_balance:40; 429_tpm_limit:9
+qwen3_14b_thinking,32768,90,50,2,4.0,100.0,100.0,4.0,403_balance:40; 429_tpm_limit:8
+qwen3_14b_thinking,65536,10,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_14b_thinking,65536,50,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen3_14b_thinking,65536,90,50,0,0.0,,,0.0,skipped_by_model_length:50
+hunyuan_a13b,4096,10,50,2,4.0,0.0,0.0,0.0,403_balance:38; 429_tpm_limit:9; 401_invalid_key:1
+hunyuan_a13b,4096,50,50,1,2.0,0.0,0.0,0.0,403_balance:38; 429_tpm_limit:10; 401_invalid_key:1
+hunyuan_a13b,4096,90,50,1,2.0,0.0,0.0,0.0,403_balance:41; 429_tpm_limit:8
+hunyuan_a13b,32768,10,50,2,4.0,0.0,0.0,0.0,403_balance:45; 429_tpm_limit:3
+hunyuan_a13b,32768,50,50,4,8.0,0.0,0.0,0.0,403_balance:40; 429_tpm_limit:6
+hunyuan_a13b,32768,90,50,5,10.0,0.0,0.0,0.0,403_balance:35; 429_tpm_limit:10
+hunyuan_a13b,65536,10,50,4,8.0,0.0,0.0,0.0,403_balance:39; 429_tpm_limit:7
+hunyuan_a13b,65536,50,50,1,2.0,0.0,0.0,0.0,403_balance:42; 429_tpm_limit:6; 401_invalid_key:1
+hunyuan_a13b,65536,90,50,0,0.0,,,0.0,403_balance:41; 429_tpm_limit:8; 401_invalid_key:1
+qwen35_27b,4096,10,50,50,100.0,100.0,100.0,100.0,
+qwen35_27b,4096,50,50,50,100.0,100.0,100.0,100.0,
+qwen35_27b,4096,90,50,50,100.0,100.0,100.0,100.0,
+qwen35_27b,32768,10,50,23,46.0,100.0,100.0,46.0,429_tpm_limit:27
+qwen35_27b,32768,50,50,19,38.0,100.0,100.0,38.0,429_tpm_limit:31
+qwen35_27b,32768,90,50,26,52.0,100.0,100.0,52.0,429_tpm_limit:24
+qwen35_27b,65536,10,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_27b,65536,50,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_27b,65536,90,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_35b_a3b,4096,10,50,47,94.0,100.0,100.0,94.0,429_tpm_limit:3
+qwen35_35b_a3b,4096,50,50,50,100.0,100.0,100.0,100.0,
+qwen35_35b_a3b,4096,90,50,50,100.0,100.0,100.0,100.0,
+qwen35_35b_a3b,32768,10,50,17,34.0,100.0,100.0,34.0,429_tpm_limit:33
+qwen35_35b_a3b,32768,50,50,13,26.0,100.0,100.0,26.0,429_tpm_limit:33; 403_balance:4
+qwen35_35b_a3b,32768,90,50,6,12.0,100.0,100.0,12.0,403_balance:36; 429_tpm_limit:8
+qwen35_35b_a3b,65536,10,50,4,8.0,100.0,100.0,8.0,403_balance:41; 429_tpm_limit:5
+qwen35_35b_a3b,65536,50,50,3,6.0,100.0,100.0,6.0,403_balance:42; 429_tpm_limit:4; 401_invalid_key:1
+qwen35_35b_a3b,65536,90,50,4,8.0,100.0,100.0,8.0,403_balance:36; 429_tpm_limit:10
+seed_oss_36b,4096,10,50,4,8.0,100.0,100.0,8.0,403_balance:40; 429_tpm_limit:5; 401_invalid_key:1
+seed_oss_36b,4096,50,50,1,2.0,100.0,100.0,2.0,403_balance:37; 429_tpm_limit:10; 401_invalid_key:2
+seed_oss_36b,4096,90,50,0,0.0,,,0.0,403_balance:41; 429_tpm_limit:9
+seed_oss_36b,32768,10,50,7,14.0,100.0,100.0,14.0,403_balance:36; 429_tpm_limit:7
+seed_oss_36b,32768,50,50,3,6.0,100.0,100.0,6.0,403_balance:40; 429_tpm_limit:7
+seed_oss_36b,32768,90,50,6,12.0,83.33,83.33,10.0,403_balance:34; 429_tpm_limit:10
+seed_oss_36b,65536,10,50,0,0.0,,,0.0,skipped_by_model_length:50
+seed_oss_36b,65536,50,50,0,0.0,,,0.0,skipped_by_model_length:50
+seed_oss_36b,65536,90,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_122b_a10b,4096,10,50,3,6.0,100.0,100.0,6.0,403_balance:38; 429_tpm_limit:9
+qwen35_122b_a10b,4096,50,50,1,2.0,100.0,100.0,2.0,403_balance:45; 429_tpm_limit:4
+qwen35_122b_a10b,4096,90,50,3,6.0,100.0,100.0,6.0,403_balance:36; 429_tpm_limit:11
+qwen35_122b_a10b,32768,10,50,6,12.0,100.0,100.0,12.0,403_balance:36; 429_tpm_limit:8
+qwen35_122b_a10b,32768,50,50,2,4.0,100.0,100.0,4.0,403_balance:39; 429_tpm_limit:7; 401_invalid_key:2
+qwen35_122b_a10b,32768,90,50,1,2.0,100.0,100.0,2.0,403_balance:42; 429_tpm_limit:7
+qwen35_122b_a10b,65536,10,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_122b_a10b,65536,50,50,0,0.0,,,0.0,skipped_by_model_length:50
+qwen35_122b_a10b,65536,90,50,0,0.0,,,0.0,skipped_by_model_length:50

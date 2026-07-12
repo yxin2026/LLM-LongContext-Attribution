@@ -18,9 +18,6 @@ SILICONFLOW_MODEL_ALIASES = {
     "qwen3_14b": "Qwen/Qwen3-14B",
     "qwen3_14b_no_thinking": "Qwen/Qwen3-14B",
     "qwen3_14b_thinking": "Qwen/Qwen3-14B",
-    "deepseek_r1_distill_qwen_14b": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-    "gemma4_31b": "google/gemma-4-31B-it",
-    "gemma4_26b_a4b": "google/gemma-4-26B-A4B-it",
     "hunyuan_a13b": "tencent/Hunyuan-A13B-Instruct",
     "seed_oss_36b": "ByteDance-Seed/Seed-OSS-36B-Instruct",
 }

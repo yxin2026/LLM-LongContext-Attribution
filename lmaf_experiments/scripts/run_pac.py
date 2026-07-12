@@ -9,14 +9,16 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from lmaf.data.pac import (
+    adapt_external_pac_sample,
     generate_pac_a_position,
     generate_pac_b_interference,
     generate_pac_c_overlap,
     generate_pac_d_multihop,
+    is_external_pac_sample,
     score_pac_sample,
 )
-from lmaf.inference.client import create_inference_client
-from lmaf.utils.io import append_jsonl, collect_jsonl, load_success_ids, utc_timestamp, write_jsonl
+from lmaf.inference.client import create_inference_client, resolve_provider_model
+from lmaf.utils.io import append_jsonl, iter_jsonl_paths, load_success_ids, read_jsonl, utc_timestamp, write_jsonl
 from lmaf.utils.token_count import TokenCounter
 
 
@@ -46,6 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--tokenizer", default=None)
     parser.add_argument("--input", default=None)
+    parser.add_argument("--input-format", choices=["auto", "lmaf", "pac-test"], default="auto")
     parser.add_argument("--output", required=True)
     parser.add_argument("--model", default=None)
     parser.add_argument("--provider", choices=["local", "siliconflow", "custom"], default="local")
@@ -53,7 +56,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--api-key", default=None)
     parser.add_argument("--enable-thinking", action="store_true")
     parser.add_argument("--thinking-budget", type=int, default=None)
+    parser.add_argument("--max-model-len", type=int, default=None)
     parser.add_argument("--max-tokens", type=int, default=512)
+    parser.add_argument("--sample-limit", type=int, default=None, help="Optional inference sample cap after subset filtering.")
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--top-p", type=float, default=1.0)
     parser.add_argument("--timeout", type=float, default=600)
@@ -62,6 +67,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def generate(args: argparse.Namespace) -> None:
+    if args.samples_per_cell <= 0:
+        raise SystemExit("--samples-per-cell must be positive")
     counter = TokenCounter(args.tokenizer)
     rows = []
     if args.subset == "A_position":
@@ -100,24 +107,37 @@ def run_inference(args: argparse.Namespace) -> None:
         raise SystemExit("--input is required unless --generate-only is set")
     if not args.model:
         raise SystemExit("--model is required for inference")
+    if args.sample_limit is not None and args.sample_limit <= 0:
+        raise SystemExit("--sample-limit must be positive when provided")
 
-    samples = collect_jsonl(args.input)
     completed = load_success_ids(args.output) if args.resume else set()
-    client = create_inference_client(
-        provider=args.provider,
-        model_name=args.model,
-        endpoint=args.endpoint,
-        api_key=args.api_key,
-        timeout=args.timeout,
-        enable_thinking=args.enable_thinking,
-        thinking_budget=args.thinking_budget,
-    )
-    for sample in samples:
+    counter = TokenCounter(args.tokenizer)
+    client = None
+    seen = 0
+    for sample in _iter_input_samples(args, counter):
+        seen += 1
         sample_id = str(sample["sample_id"])
         if sample_id in completed:
             continue
+        prompt = str(sample.get("prompt") or "")
+        if not prompt:
+            raise SystemExit(f"Sample {sample_id} has no prompt. Use --input-format pac-test for external PAC-Test data.")
+        prompt_tokens = _prompt_tokens(sample, prompt, counter)
+        if args.max_model_len and prompt_tokens > args.max_model_len:
+            append_jsonl(args.output, _skipped_row(sample, args, prompt_tokens, "skipped_overlength"))
+            continue
+        if client is None:
+            client = create_inference_client(
+                provider=args.provider,
+                model_name=args.model,
+                endpoint=args.endpoint,
+                api_key=args.api_key,
+                timeout=args.timeout,
+                enable_thinking=args.enable_thinking,
+                thinking_budget=args.thinking_budget,
+            )
         result = client.generate(
-            prompt=str(sample["prompt"]),
+            prompt=prompt,
             request_id=sample_id,
             max_tokens=args.max_tokens,
             temperature=args.temperature,
@@ -131,7 +151,7 @@ def run_inference(args: argparse.Namespace) -> None:
                 "api_model": client.served_model_name,
                 "prediction": result.response_text,
                 "latency_sec": result.latency_sec,
-                "prompt_tokens": result.prompt_tokens or sample.get("length_tokens_actual"),
+                "prompt_tokens": result.prompt_tokens or prompt_tokens,
                 "completion_tokens": result.completion_tokens,
                 "timestamp": utc_timestamp(),
                 "error": result.error,
@@ -142,6 +162,64 @@ def run_inference(args: argparse.Namespace) -> None:
         else:
             row.update(score_pac_sample(sample, result.response_text))
         append_jsonl(args.output, row)
+    if seen == 0:
+        raise SystemExit(f"No PAC samples found for subset {args.subset} under {args.input}.")
+
+
+def _iter_input_samples(args: argparse.Namespace, counter: TokenCounter):
+    yielded = 0
+    for path in iter_jsonl_paths(args.input):
+        for row in read_jsonl(path):
+            sample = _normalize_input_sample(row, args, counter)
+            if sample is None:
+                continue
+            if sample.get("subtask") != args.subset:
+                continue
+            yield sample
+            yielded += 1
+            if args.sample_limit is not None and yielded >= args.sample_limit:
+                return
+
+
+def _normalize_input_sample(row: dict, args: argparse.Namespace, counter: TokenCounter) -> dict | None:
+    if args.input_format == "pac-test":
+        return adapt_external_pac_sample(row, counter=counter, count_tokens=False)
+    if args.input_format == "lmaf":
+        return row
+    if is_external_pac_sample(row):
+        return adapt_external_pac_sample(row, counter=counter, count_tokens=False)
+    return row
+
+
+def _prompt_tokens(sample: dict, prompt: str, counter: TokenCounter) -> int:
+    value = sample.get("length_tokens_actual") or sample.get("length_tokens_target") or sample.get("total_length")
+    if value not in (None, ""):
+        try:
+            return int(float(value))
+        except (TypeError, ValueError):
+            pass
+    return counter.count(prompt)
+
+
+def _skipped_row(sample: dict, args: argparse.Namespace, prompt_tokens: int, reason: str) -> dict:
+    row = dict(sample)
+    row.update(
+        {
+            "model": args.model,
+            "provider": args.provider,
+            "api_model": resolve_provider_model(args.provider, args.model),
+            "prediction": "",
+            "latency_sec": 0.0,
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": 0,
+            "timestamp": utc_timestamp(),
+            "score": 0.0,
+            "metric": reason,
+            "error": reason,
+            "error_type": reason,
+        }
+    )
+    return row
 
 
 def _parse_ints(value: str) -> list[int]:
